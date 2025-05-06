@@ -1,0 +1,157 @@
+.banner-section {
+    height: 669px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Banner content box for desktop */
+.banner-content-box {
+    width: 523px;
+    height: 307px;
+    position: absolute;
+    top: 158px;
+    left: 158px;
+    border-radius: 31px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(247, 241, 241, 0.5);
+}
+
+.banner-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    margin: 0 0 20px 0;
+    color: black;
+}
+
+.banner-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 499px;
+    left: 156px;
+    flex-wrap: wrap;
+}
+
+.banner-buttons button {
+    width: 141px;
+    height: 44px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.banner-buttons .explore-button {
+    background-color: #3B82F6;
+    color: black;
+    border: none;
+}
+
+.banner-buttons .contact-button {
+    background-color: #E9E9E9;
+    color: black;
+}
+
+/* Line Section */
+.line-section {
+    position: absolute;
+    top: 158px;
+    left: 100px;
+    gap: 
+    120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-button {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #3B82F6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3B82F6;
+    font-size: 12px;
+    background-color: white;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.circle-button.active {
+    background-color: #3B82F6;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+
+@media (max-width: 768px) {
+    .banner-section {
+        padding-top: 150px;
+    }
+
+    .banner-content-box {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 28px;
+    }
+
+    .banner-subtitle {
+        font-size: 14px;
+    }
+
+    .banner-buttons {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-buttons button {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    /* UPDATED line-section styles for mobile */
+    .line-section {
+       
+        display: flex;
+        flex-direction: row;
+      top: 550px;
+      left: 160px;
+       
+        gap: 15px;
+    }
+
+   
+}

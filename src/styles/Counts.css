@@ -1,0 +1,37 @@
+.counts-container {
+    width: 1240px;
+    height: 210px;
+   margin: 120px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F8F8; /* Optional background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .count-box {
+    width: 200px;
+    height: 91px;
+    text-align: center;
+  }
+  
+  .count-number {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000;
+  }
+  
+  .count-label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 5px;
+    color: #333;
+  }
+  

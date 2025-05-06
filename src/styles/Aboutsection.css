@@ -1,0 +1,94 @@
+/* Heading */
+.about-section-heading {
+    text-align: center;
+    font-size: 36px; /* increased from 32px */
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.about-section-heading::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px; /* slightly thicker underline */
+    background-color: #3B82F6;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* Main container */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 100px;
+    background-color: #EDEDED99;
+    border-radius: 12px;
+    margin: 50px auto;
+    gap: 40px;
+}
+
+/* Text section */
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 24px; /* increased from 20px */
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.about-text p {
+    font-size: 18px; /* increased from 16px */
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+/* Features grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.feature-item strong {
+    font-size: 18px; /* increased from 16px */
+    font-weight: 700;
+}
+
+.feature-item p {
+    font-size: 16px; /* increased from 14px */
+    margin-top: 4px;
+}
+
+/* Image section */
+.about-image {
+    flex: 0 0 400px;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.quote-box {
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    background: white;
+    padding: 18px 24px;
+    font-size: 16px; /* increased from default */
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}

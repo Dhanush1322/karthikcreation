@@ -6,6 +6,9 @@
     position: relative;
     padding: 20px;
     transition: background-image 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Banner content box for desktop */
@@ -73,8 +76,7 @@
     position: absolute;
     top: 158px;
     left: 100px;
-    gap: 
-    120px;
+    gap: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,16 +105,18 @@
     box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
 }
 
-
 @media (max-width: 768px) {
     .banner-section {
-        padding-top: 150px;
+        height: auto;
+        padding: 20px;
+        padding-top: 100px;
+        align-items: center;
     }
 
     .banner-content-box {
         position: relative;
-        top: auto;
-        left: auto;
+        top: 0;
+        left: 0;
         width: 100%;
         height: auto;
         padding: 20px;
@@ -135,23 +139,21 @@
         margin-top: 20px;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .banner-buttons button {
-        width: 80%;
+        width: 90%;
         margin: 10px 0;
     }
 
-    /* UPDATED line-section styles for mobile */
     .line-section {
-       
-        display: flex;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: 30px;
         flex-direction: row;
-      top: 550px;
-      left: 160px;
-       
+        justify-content: center;
         gap: 15px;
     }
-
-   
 }

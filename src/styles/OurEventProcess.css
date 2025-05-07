@@ -101,7 +101,8 @@
     }
   
     .timeline-dot {
-      left: 8px;
+      left: -12px;
+      top: 110px;
     }
   
     .icon-circle {

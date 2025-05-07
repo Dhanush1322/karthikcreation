@@ -1,0 +1,70 @@
+.vision-mission-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f9fafb;
+}
+
+.card {
+  background-color: #F2F2F2;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 22px;
+  background-color: #e0f2fe;
+  color: #2563eb;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 14px;
+  width: 44px;
+  height: 44px;
+}
+
+
+
+
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.card p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.card ul li svg {
+  margin-right: 8px;
+}

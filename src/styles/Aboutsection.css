@@ -92,3 +92,73 @@
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
+/* Existing styles remain unchanged above this point */
+
+@media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      padding: 30px 20px;
+      align-items: center;
+    }
+  
+    .about-section-heading {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  
+    .about-section-heading::after {
+      width: 60px;
+      height: 3px;
+    }
+  
+    .about-text {
+      text-align: center;
+    }
+  
+    .about-text h3 {
+      font-size: 20px;
+    }
+  
+    .about-text p {
+      font-size: 16px;
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .feature-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .feature-item strong {
+      font-size: 16px;
+    }
+  
+    .feature-item p {
+      font-size: 14px;
+    }
+  
+    .about-image {
+      flex: 0 0 auto;
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    .about-image img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  
+    .quote-box {
+      position: static;
+      margin-top: 20px;
+      font-size: 14px;
+      padding: 14px 20px;
+      text-align: center;
+    }
+  }
+  

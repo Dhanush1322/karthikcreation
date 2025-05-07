@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
 import '../styles/Nav.css';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,15 +21,14 @@ function Nav() {
 
       {/* Links Section */}
       <div className={`links ${menuOpen ? 'active' : ''}`}>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/login">Product</a>
-        <a href="/register">Entertainment</a>
-        <a href="/register">Package</a>
-        <a href="/register">Entertainment</a>
-        <a href="/register">Operation Costing</a>
-        <a href="/contact">Client Enquiry Form</a>
-        <a href="/contact">Contact Us</a>
+        <Link to="/">Home</Link>
+        <Link to="/About">About</Link>
+        <Link to="/login">Product</Link>
+        <Link to="/register">Entertainment</Link>
+        <Link to="/package">Package</Link>
+        <Link to="/operation-costing">Operation Costing</Link>
+        <Link to="/client-enquiry">Client Enquiry Form</Link>
+        <Link to="/contact">Contact Us</Link>
       </div>
     </div>
   );

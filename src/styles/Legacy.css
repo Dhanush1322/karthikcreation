@@ -1,0 +1,134 @@
+.legacy-container {
+  background-color: #f3f4f6;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.legacy-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.legacy-subtitle {
+  color: #0072a0;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.legacy-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.legacy-title span {
+  color: #000;
+}
+
+.legacy-description {
+  color: black;
+  
+  font-weight: 500;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
+
+.timelinne {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 0px;
+  border-left: 3px solid #ccc;
+}
+
+.timelinne-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.timelinne-circle {
+  position: absolute;
+  left: -9px;
+  top: 1px;
+  width: 17px;
+  height: 17px;
+  background-color: #0072a0;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #0072a0;
+}
+
+.timelinne-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timelinne-year {
+  display: inline-block;
+  background-color: #e0f0ff;
+  color: #0072a0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.timelinne-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.timelinne-text {
+  font-size: 14px;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* ✅ Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .legacy-container {
+    padding: 40px 15px;
+  }
+
+  .legacy-title {
+    font-size: 24px;
+  }
+
+  .legacy-description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .timelinne {
+    padding-left: 5px;
+    border-left: 2px solid #ccc;
+  }
+
+  .timelinne-circle {
+    width: 14px;
+    height: 14px;
+    left: -11px;
+    top: 2px;
+  }
+
+  .timelinne-content {
+    padding: 16px;
+  }
+
+  .timelinne-title {
+    font-size: 16px;
+  }
+
+  .timelinne-text {
+    font-size: 13px;
+  }
+
+  .timelinne-year {
+    font-size: 11px;
+  }
+}

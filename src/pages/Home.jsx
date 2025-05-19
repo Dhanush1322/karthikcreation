@@ -1,6 +1,5 @@
 import React from 'react'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+
 import Banner from '../components/Banner'
 import Counts from '../components/Counts'
 import Aboutsection from '../components/Aboutsection'
@@ -15,7 +14,7 @@ import Subscrib from '../components/Subscrib'
 function Home() {
   return (
     <div>
-        <Nav/>
+       
         <Banner/>
         <Counts/>
         <Aboutsection/>
@@ -27,7 +26,7 @@ function Home() {
         <OurEventProcess/>
         <Subscrib/>
     
-        <Footer/>
+    
     </div>
   )
 }

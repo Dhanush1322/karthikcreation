@@ -44,7 +44,7 @@ function Banner() {
             </div>
 
             <div className="banner-buttons">
-                <button className="explore-button">Explore Services</button>
+                <button className="explore-button">Services</button>
                 <button className="contact-button">Contact Us</button>
             </div>
 

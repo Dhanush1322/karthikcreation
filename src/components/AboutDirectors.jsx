@@ -1,15 +1,25 @@
-import React from 'react';
-import '../styles/AboutDirectors.css'; // Create this CSS file
+import React, { useEffect } from 'react';
+import '../styles/AboutDirectors.css'; // Your CSS file
 import { FaLinkedin, FaTwitter } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function AboutDirectors() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="director-section">
+    <div className="director-section" data-aos="fade-up">
       <div className="director-container">
-        <div className="director-image">
-          <img src="./img/profile.png" alt="Director" />
+        <div className="director-image" data-aos="fade-right" data-aos-delay="200">
+          <img src="./img/profile.jpg" alt="Director" />
         </div>
-        <div className="director-content">
+        <div className="director-content" data-aos="fade-left" data-aos-delay="400">
           <p className="director-subtitle">DIRECTOR’S MESSAGE</p>
           <h2 className="director-name">Mr. Mahantesh RS</h2>
           <p className="director-text">
@@ -24,9 +34,9 @@ function AboutDirectors() {
             and artistic ingenuity, which ultimately led to the founding of this enterprise. Today, I remain
             intimately involved with every project, ensuring we maintain our commitment to excellence.
           </p>
-          <div className="social-icons">
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaTwitter /></a>
+          <div className="about-social-icons flex" data-aos="zoom-in" data-aos-delay="600">
+            <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
+            <a href="#" aria-label="Twitter"><FaTwitter /></a>
           </div>
         </div>
       </div>

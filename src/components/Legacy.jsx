@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Legacy.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const milestones = [
   {
@@ -35,9 +37,17 @@ const milestones = [
 ];
 
 function Legacy() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   return (
     <div className="legacy-container">
-      <div className="legacy-header">
+      <div className="legacy-header" data-aos="fade-down">
         <h4 className="legacy-subtitle">Our Journey</h4>
         <h2 className="legacy-title">
           A Legacy of Excellence Since <span>1905</span>
@@ -49,7 +59,12 @@ function Legacy() {
 
       <div className="timelinne">
         {milestones.map((item, index) => (
-          <div className="timelinne-item" key={index}>
+          <div
+            className="timelinne-item"
+            key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
+          >
             <div className="timelinne-circle"></div>
             <div className="timelinne-content">
               <span className="timelinne-year">{item.year}</span>

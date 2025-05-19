@@ -1,0 +1,137 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+.services-wrapper {
+  padding: 60px 20px;
+  background: #fafafa;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.services-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.services-subtitle {
+  font-size: 15px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.5;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive columns */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.service-enqiry-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 250px;
+}
+
+.service-icon {
+  background: #e0f0ff;
+  color: #2196f3;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.service-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+  text-align: left;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.service-link {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  text-align: left;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 24px;
+  }
+
+  .services-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* Single column on smaller devices */
+    gap: 16px;
+  }
+
+  .service-enqiry-card {
+    padding: 20px;
+  }
+
+  .service-title {
+    font-size: 15px;
+  }
+
+  .service-desc,
+  .service-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-wrapper {
+    padding: 40px 15px;
+  }
+
+  .services-title {
+    font-size: 22px;
+  }
+
+  .service-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .service-enqiry-card {
+    padding: 18px;
+  }
+}

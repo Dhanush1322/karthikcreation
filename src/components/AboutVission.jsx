@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/AboutVission.css';
-import { FaEye, FaFlagCheckered } from 'react-icons/fa';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaEye, FaFlagCheckered, FaCheckCircle } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function AboutVission() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   return (
     <div className="vision-mission-section">
-      <div className="card vision-card">
+      <div className="card vision-card" data-aos="fade-left">
         <div className="card-icon">
           <FaEye />
         </div>
@@ -22,7 +31,7 @@ function AboutVission() {
         </ul>
       </div>
 
-      <div className="card mission-card">
+      <div className="card mission-card" data-aos="fade-right">
         <div className="card-icon">
           <FaFlagCheckered />
         </div>

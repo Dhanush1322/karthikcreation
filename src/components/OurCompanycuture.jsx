@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/OurCompanyCulture.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function OurCompanyCulture() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out',
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="culture-section-wrapper">
       {/* SECTION 1: Work Environment */}
-      <div className="culture-section">
-        <div className="culture-header">
+      <div className="culture-section" data-aos="fade-up">
+        <div className="culture-header" data-aos="fade-down" data-aos-delay="200">
           <h2>Our Company Culture</h2>
           <p>The environment we create to foster creativity, collaboration, and excellence</p>
         </div>
 
         <div className="culture-content">
-          <div className="culture-text">
+          <div className="culture-text" data-aos="fade-right" data-aos-delay="400">
             <h3>Work Environment</h3>
             <p>
               At Karthik Creations, we've cultivated a dynamic, inclusive, and supportive
@@ -35,7 +46,7 @@ function OurCompanyCulture() {
             </div>
           </div>
 
-          <div className="culture-images">
+          <div className="culture-images" data-aos="fade-left" data-aos-delay="600">
             <img src="./gallery/go.png" alt="Team celebrating" />
             <img src="./gallery/go 1.png" alt="Team discussion" />
             <img src="./gallery/go 3.png" alt="Outdoor conversation" />
@@ -45,9 +56,13 @@ function OurCompanyCulture() {
       </div>
 
       {/* SECTION 2: Professional Development */}
-      <div className="culture-section reverse">
-        <div className="culture-image-wrapper">
-          <img src="./gallery/team.png" alt="Professional Development" className="culture-main-image" />
+      <div className="culture-section reverse" data-aos="fade-up" data-aos-delay="200">
+        <div className="culture-image-wrapper" data-aos="zoom-in" data-aos-delay="400">
+          <img
+            src="./gallery/team.png"
+            alt="Professional Development"
+            className="culture-main-image"
+          />
           <div className="image-caption">
             <div className="caption-icon">👥</div>
             <div>
@@ -57,7 +72,7 @@ function OurCompanyCulture() {
           </div>
         </div>
 
-        <div className="culture-text">
+        <div className="culture-text" data-aos="fade-left" data-aos-delay="600">
           <h3>Professional Development</h3>
           <p>
             At Karthik Creations, we've cultivated a dynamic, inclusive, and supportive

@@ -1,40 +1,68 @@
+import React, { useEffect } from 'react';
+import '../styles/OurAchivments.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import React from 'react';
-import '../styles/OurAchivments.css'; // Make sure you create this CSS file
+const achievements = [
+  {
+    title: 'Recognized as Best Event Management Company',
+    description: 'Recognized for excellence in corporate event management and innovative solutions.',
+    image: '/img/hch3.png',
+    tag: '🏆 National Event Industry Awards',
+    highlightClass: 'highlight-blue',
+  },
+  {
+    title: 'Expos and Events catered by Us as a vendor to Our Clients Annually',
+    description: 'State-of-the-art audio-visual equipment for events of any scale and complexity.',
+    image: '/img/hch1.png',
+    tag: '🎧 Professional-grade Equipment',
+    highlightClass: '',
+  },
+  {
+    title: 'Our Sucessful Services catered by Us',
+    description: 'Managed a 3-day international tech conference with 2,500+ attendees and 50+ speakers.',
+    image: '/img/hch2.png',
+    tag: '✅ TechCorp International',
+    highlightClass: 'highlight-green',
+  },
+];
 
 function OurAchivements() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="our-achievements">
-      <h2 className="section-heading">Our Achievements</h2>
-      <p className="section-subheading">
-        Award-winning excellence in event management and production
+    <div className="our-achievements" data-aos="fade-up">
+      <h2 className="section-heading" data-aos="fade-down">Our Achievements</h2>
+      <p className="section-subheading" data-aos="fade-up" data-aos-delay="100">
+        We have been working on related Planning, and Execution from attention to detail, proportions and scale,
+        together with commonsense ensure the finished concept with the Right Solution and Judgment.
+        We have Achieved in providing services at all of Places—Public and Private, Institutional, Commercial, 
+        Residential, Schools, Hospitals, Larger mixed Communities, Institutions, Apartments, Houses, etc.
       </p>
-      <div className="underline" />
+      <div className="underline" data-aos="zoom-in" />
 
       <div className="achievement-cards">
-        <div className="card highlight-blue">
-          <img src="/img/t2.png" alt="Best Event" />
-          <h3>Best Event Management Company</h3>
-          <p>Recognized for excellence in corporate event management and innovative solutions.</p>
-          <span className="tag">🏆 National Event Industry Awards</span>
-        </div>
-
-        <div className="card">
-          <img src="/img/t3.png" alt="AV Solutions" />
-          <h3>Premium AV Solutions</h3>
-          <p>State-of-the-art audio-visual equipment for events of any scale and complexity.</p>
-          <span className="tag">🎧 Professional-grade Equipment</span>
-        </div>
-
-        <div className="card highlight-green">
-          <img src="/img/t4.png" alt="Tech Summit" />
-          <h3>Global Tech Summit</h3>
-          <p>Managed a 3-day international tech conference with 2,500+ attendees and 50+ speakers.</p>
-          <span className="tag">✅ TechCorp International</span>
-        </div>
+        {achievements.map((item, index) => (
+          <div
+            className={`card ${item.highlightClass}`}
+            key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 150} // stagger animation
+          >
+            <img src={item.image} alt={item.title} />
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+            <span className="tag">{item.tag}</span>
+          </div>
+        ))}
       </div>
 
-      <div className="cta-button">
+      <div className="cta-button" data-aos="fade-up" data-aos-delay="300">
         <button>View All Equipment</button>
       </div>
     </div>

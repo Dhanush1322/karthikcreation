@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/AboutTeam.css'; // Import the external CSS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const teamMembers = [
   {
@@ -15,7 +17,7 @@ const teamMembers = [
     title: 'Chief Operations Officer',
     description:
       'Michael’s innovative vision and artistic talent have redefined the creative approach. His background in design and production helps create immersive event experiences that leave lasting impressions.',
-      image: './gallery/pp2.png',
+    image: './gallery/pp2.png',
     linkedin: '#',
   },
   {
@@ -23,7 +25,7 @@ const teamMembers = [
     title: 'Founder & CEO',
     description:
       "With over 20 years of experience in the event industry, Rajesh founded Karthik Creations with a vision to redefine event experiences. His leadership and innovative approach have been instrumental in the company's growth.",
-      image: './gallery/pp3.png',
+    image: './gallery/pp3.png',
     linkedin: '#',
   },
   {
@@ -31,7 +33,7 @@ const teamMembers = [
     title: 'Founder & CEO',
     description:
       "With over 20 years of experience in the event industry, Rajesh founded Karthik Creations with a vision to redefine event experiences. His leadership and innovative approach have been instrumental in the company's growth.",
-      image: './gallery/pp4.png',
+    image: './gallery/pp4.png',
     linkedin: '#',
   },
   {
@@ -39,7 +41,7 @@ const teamMembers = [
     title: 'Founder & CEO',
     description:
       "With over 20 years of experience in the event industry, Rajesh founded Karthik Creations with a vision to redefine event experiences. His leadership and innovative approach have been instrumental in the company's growth.",
-      image: './gallery/pp5.png',
+    image: './gallery/pp5.png',
     linkedin: '#',
   },
   {
@@ -47,14 +49,22 @@ const teamMembers = [
     title: 'Founder & CEO',
     description:
       "With over 20 years of experience in the event industry, Rajesh founded Karthik Creations with a vision to redefine event experiences. His leadership and innovative approach have been instrumental in the company's growth.",
-      image: './gallery/pp6.png',
+    image: './gallery/pp6.png',
     linkedin: '#',
   },
 ];
 
 function AboutTeam() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="about-team">
+    <div className="about-team" data-aos="fade-up">
       <h2 className="about-team-title">Meet Our Leadership Team</h2>
       <p className="about-team-subtitle">
         The talented professionals behind our exceptional event experiences
@@ -62,13 +72,24 @@ function AboutTeam() {
 
       <div className="team-grid">
         {teamMembers.map((member, index) => (
-          <div className="team-card" key={index}>
+          <div
+            className="team-card"
+            key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
+          >
             <img src={member.image} alt={member.name} className="team-image" />
             <div className="team-content">
               <h3 className="team-name">{member.name}</h3>
               <p className="team-title">{member.title}</p>
               <p className="team-description">{member.description}</p>
-              <a href={member.linkedin} className="team-linkedin" target="_blank" rel="noreferrer">
+              <a
+                href={member.linkedin}
+                className="team-linkedin"
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`LinkedIn profile of ${member.name}`}
+              >
                 <i className="fab fa-linkedin"></i>
               </a>
             </div>

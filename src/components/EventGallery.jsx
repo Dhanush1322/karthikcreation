@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/EventGallery.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const events = [
   {
@@ -45,20 +47,27 @@ const categories = ['All', 'Corporate', 'Wedding', 'Exhibitions', 'Operations', 
 function EventGallery() {
   const [activeCategory, setActiveCategory] = useState('All');
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const filteredEvents =
     activeCategory === 'All'
       ? events
       : events.filter((event) => event.category === activeCategory);
 
   return (
-    <div className="event-gallery-section">
-      <h2 className="title">Event Gallery</h2>
-      <p className="subtitle">
+    <div className="event-gallery-section" data-aos="fade-up">
+      <h2 className="event-gallery-title" data-aos="fade-down">Event Gallery</h2>
+      <p className="subtitle" data-aos="fade-up" data-aos-delay="100">
         Explore our portfolio of successful events and creative setups
       </p>
-      <div className="underline" />
+      <div className="underline" data-aos="zoom-in" />
 
-      <div className="category-tabs">
+      <div className="event-gallery-category-tabs" data-aos="fade-up" data-aos-delay="150">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -72,7 +81,12 @@ function EventGallery() {
 
       <div className="event-grid">
         {filteredEvents.map((event, idx) => (
-          <div key={idx} className="event-card">
+          <div
+            key={idx}
+            className="event-gallery-card"
+            data-aos="fade-up"
+            data-aos-delay={idx * 150}
+          >
             <img src={event.image} alt={event.title} />
             <h3>{event.title}</h3>
             <p>{event.description}</p>

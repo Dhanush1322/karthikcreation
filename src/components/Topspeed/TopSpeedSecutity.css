@@ -1,0 +1,108 @@
+.top-speed-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tp-description {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  max-width: 875px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 400px;
+  overflow: hidden;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 282px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #25c76d;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.service-card h3 {
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0 16px;
+  margin: 0 0 12px 0;
+}
+
+.service-card ul li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 16px;
+  margin-top: auto;
+}
+
+.book-btn {
+  padding: 8px 16px;
+  background: #9A9A9A;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+  color: #4E4E4E;
+  font-size: 12px;
+}
+
+.book-btn:hover {
+  background: #ddd;
+}

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/ClientTestimonial.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const testimonials = [
   {
@@ -29,16 +31,28 @@ const testimonials = [
 ];
 
 function ClientTestimonial() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="testimonial-container">
-      <h2 className="testimonial-title">Client Testimonials</h2>
-      <p className="testimonial-subtitle">
+    <div className="testimonial-container" data-aos="fade-up">
+      <h2 className="testimonial-title" data-aos="fade-down">Client Testimonials</h2>
+      <p className="testimonial-subtitle" data-aos="fade-up" data-aos-delay="100">
         What our clients say about their experience with Karthik Creations
       </p>
-      
+
       <div className="testimonial-cards">
         {testimonials.map((item, index) => (
-          <div className="testimonial-card" key={index}>
+          <div
+            className="testimonial-card"
+            key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
+          >
             <div className="stars">{'⭐'.repeat(item.stars)}</div>
             <p className="feedback">"{item.feedback}"</p>
             <div className="client-info">

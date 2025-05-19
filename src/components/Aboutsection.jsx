@@ -18,10 +18,14 @@ function Aboutsection() {
           <h3>Your Premier Event Management Partner</h3>
           <p>
             Karthik Creations has established itself as a leading event management
-            company specializing in creating memorable experiences...
+            company specializing in creating memorable experiences for
+            corporate events, weddings, exhibitions, and entertainment shows.
           </p>
           <p>
-            Our dedicated team of event professionals brings creativity, precision...
+
+            Our dedicated team of event professionals brings creativity, precision,
+            and passion to every project, ensuring flawless execution from concept
+            to completion.
           </p>
 
           <div className="features-grid">

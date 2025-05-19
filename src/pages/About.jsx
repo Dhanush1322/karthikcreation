@@ -1,6 +1,5 @@
 import React from 'react'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+
 import AboutBanner from '../components/AboutBanner'
 import AboutDirectors from '../components/AboutDirectors'
 import AboutTeam from '../components/AboutTeam'
@@ -12,7 +11,7 @@ import SpeakforthemselfeAbout from '../components/SpeakforthemselfeAbout'
 function About() {
   return (
     <div>
-        <Nav/>
+   
         <AboutBanner/>
         <AboutDirectors/>
         <AboutTeam/>
@@ -21,7 +20,7 @@ function About() {
         <AboutVission/>
         <OurCore/>
         <SpeakforthemselfeAbout/>
-        <Footer/>
+      
     </div>
   )
 }

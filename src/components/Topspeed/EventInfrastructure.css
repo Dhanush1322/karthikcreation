@@ -1,0 +1,119 @@
+.infra-wrapper {
+  padding: 60px 20px;
+  background: #fafafa;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.infra-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.infra-subtitle {
+  font-size: 15px;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+  line-height: 1.5;
+}
+
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.infra-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.infra-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.infra-card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.infra-icon {
+  background: #e0f0ff;
+  color: #2196f3;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.infra-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.infra-card-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.infra-link {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.infra-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .infra-title {
+    font-size: 22px;
+  }
+
+  .infra-subtitle {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .infra-card-content {
+    padding: 16px;
+  }
+
+  .infra-card-title {
+    font-size: 15px;
+  }
+
+  .infra-card-desc,
+  .infra-link {
+    font-size: 13px;
+  }
+
+  .infra-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}

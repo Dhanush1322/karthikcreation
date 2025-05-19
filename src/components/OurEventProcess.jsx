@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/OurEventProcess.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const processSteps = [
   {
@@ -30,22 +32,38 @@ const processSteps = [
 ];
 
 function OurEventProcess() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-out-cubic',
+    });
+  }, []);
+
   return (
-    <div className="event-process-container">
-      <h2 className="event-process-title">Our Event Planning Process</h2>
-      <p className="event-process-subtitle">
+    <div className="event-process-container" data-aos="fade-up">
+      <h2 className="event-process-title" data-aos="fade-down">Our Event Planning Process</h2>
+      <p className="event-process-subtitle" data-aos="fade-up" data-aos-delay="100">
         A systematic approach to delivering exceptional events
       </p>
-      
+
       <div className="timeline">
         {processSteps.map((step, index) => (
           <div className="timeline-row" key={index}>
-            <div className={`timeline-card ${index % 2 === 0 ? 'left' : 'right'}`}>
-              <img src="./img/pp1.png" alt="ddd" />
+            <div
+              className={`timeline-card ${index % 2 === 0 ? 'left' : 'right'}`}
+              data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
+              data-aos-delay={index * 150}
+            >
+              <img src="./img/pp1.png" alt="Process step" />
               <h4>{step.title}</h4>
               <p>{step.description}</p>
             </div>
-            <div className="timeline-dot" />
+            <div
+              className="timeline-dot"
+              data-aos="zoom-in"
+              data-aos-delay={index * 150 + 100}
+            />
           </div>
         ))}
       </div>

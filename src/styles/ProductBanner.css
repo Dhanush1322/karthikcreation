@@ -1,0 +1,102 @@
+.product-banner {
+    background-image: url('./img/productbanner.jpg'); /* Replace this with the actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-banner-overlay {
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+  }
+  
+  .product-banner-content {
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  .product-banner-content h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .product-banner-content p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .product-banner-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-btn,
+  .services-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-btn {
+    background-color: #3B82F6;
+    color: white;
+  }
+  
+  .services-btn {
+    background-color: #f3f3f3;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .product-banner {
+      height: auto;
+      padding: 40px 20px;
+    }
+  
+    .product-banner-overlay {
+      padding: 20px;
+      justify-content: center;
+    }
+  
+    .product-banner-content {
+      text-align: center;
+    }
+  
+    .product-banner-content h1 {
+      font-size: 36px;
+    }
+  
+    .product-banner-content p {
+      font-size: 16px;
+    }
+  
+    .product-banner-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-btn,
+    .services-btn {
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+  

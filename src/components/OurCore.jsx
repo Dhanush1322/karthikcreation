@@ -1,39 +1,55 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/OurCore.css';
 import { FaAward, FaHeart, FaLightbulb, FaUsers, FaUserLock, FaLeaf } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function OurCore() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   const coreValues = [
     {
       icon: <FaAward />,
       title: 'Excellence',
-      description: 'We strive for excellence in everything we do, from the smallest details to the grandest designs, ensuring the highest quality in all our deliverables.'
+      description:
+        'We strive for excellence in everything we do, from the smallest details to the grandest designs, ensuring the highest quality in all our deliverables.',
     },
     {
       icon: <FaHeart />,
       title: 'Integrity',
-      description: 'We operate with honesty, transparency, and ethical standards, building trust with our clients, partners, and team members.'
+      description:
+        'We operate with honesty, transparency, and ethical standards, building trust with our clients, partners, and team members.',
     },
     {
       icon: <FaLightbulb />,
       title: 'Innovation',
-      description: 'We embrace creativity and forward-thinking, constantly seeking new solutions and approaches to deliver exceptional results.'
+      description:
+        'We embrace creativity and forward-thinking, constantly seeking new solutions and approaches to deliver exceptional results.',
     },
     {
       icon: <FaUsers />,
       title: 'Collaboration',
-      description: 'We believe in the power of teamwork, fostering an environment where diverse perspectives come together to create exceptional outcomes.'
+      description:
+        'We believe in the power of teamwork, fostering an environment where diverse perspectives come together to create exceptional outcomes.',
     },
     {
       icon: <FaUserLock />,
       title: 'Client-Centric',
-      description: 'We put our clients at the center of everything we do, listening carefully to their needs and exceeding their expectations.'
+      description:
+        'We put our clients at the center of everything we do, listening carefully to their needs and exceeding their expectations.',
     },
     {
       icon: <FaLeaf />,
       title: 'Sustainability',
-      description: 'We are committed to environmentally responsible practices, creating designs that are both beautiful and sustainable for future generations.'
-    }
+      description:
+        'We are committed to environmentally responsible practices, creating designs that are both beautiful and sustainable for future generations.',
+    },
   ];
 
   return (
@@ -49,7 +65,7 @@ function OurCore() {
 
       <div className="values-grid">
         {coreValues.map((value, index) => (
-          <div key={index} className="value-card">
+          <div key={index} className="value-card" data-aos="fade-up" data-aos-delay={index * 100}>
             <div className="icon">{value.icon}</div>
             <h3>{value.title}</h3>
             <p>{value.description}</p>

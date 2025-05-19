@@ -4,7 +4,7 @@
     background-color: #fff;
   }
   
-  .title {
+  .event-gallery-title {
     font-size: 36px;
     font-weight: bold;
   }
@@ -22,7 +22,7 @@
     border-radius: 2px;
   }
   
-  .category-tabs {
+  .event-gallery-category-tabs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -33,20 +33,20 @@
 
   }
   
-  .category-tabs button {
+  .event-gallery-category-tabs button {
     padding: 8px 20px;
     border: none;
-    background-color: #f0f0f0;
+    background-color: #8a9eb9;
     border-radius: 20px;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
   }
   
-  .category-tabs button.active,
-  .category-tabs button:hover {
+  .event-gallery-category-tabs button.active,
+  .event-gallery-category-tabs button:hover {
     background-color: #3b82f6;
-    color: white;
+    color: black;
   }
   
   .event-grid {
@@ -56,7 +56,7 @@
     gap: 30px;
   }
   
-  .event-card {
+  .event-gallery-card {
     background: #fff;
     border-radius: 20px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1); /* right and bottom shadow */
@@ -67,22 +67,22 @@
   }
   
   
-  .event-card:hover {
+  .event-gallery-card:hover {
     transform: translateY(-5px);
   }
   
-  .event-card img {
+  .event-gallery-card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
   }
   
-  .event-card h3 {
+  .event-gallery-card h3 {
     font-size: 18px;
     margin: 15px 15px 5px 15px;
   }
   
-  .event-card p {
+  .event-gallery-card p {
     color: #666;
     margin: 0 15px 15px 15px;
     font-size: 14px;

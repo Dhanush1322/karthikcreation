@@ -95,9 +95,11 @@
 /* Existing styles remain unchanged above this point */
 
 @media (max-width: 768px) {
+
+
     .about-section {
       flex-direction: column;
-     
+      padding: 20px;
       align-items: center;
     }
   

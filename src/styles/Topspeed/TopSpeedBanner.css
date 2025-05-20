@@ -5,6 +5,7 @@
   background-image: url('/speed/tpbanner.jpg');
   background-size: cover;
   background-position: center;
+  margin-top: 100px;
 }
 
 .overlay {
@@ -53,6 +54,7 @@
 }
 
 @media (min-width: 768px) {
+  
   .description {
     font-size: 1.125rem;
   }

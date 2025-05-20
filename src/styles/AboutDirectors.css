@@ -19,6 +19,7 @@
   width: 420px;
   height: auto;
   border-radius: 12px;
+ 
 }
 
 .director-content {
@@ -71,11 +72,13 @@
   .director-image img {
     width: 100%;
     max-width: 320px;
+   
+    align-items: center;
   }
 
   .director-content {
-    padding: 20px 10px 0 10px;
-    text-align: center;
+    padding: 10px
+   
   }
 
   .about-social-icons {

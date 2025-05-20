@@ -6,11 +6,11 @@ import EventInfrastuture from "../components/Topspeed/EventInfrastuture"
 function TopSpeed() {
   return (
     <div>
-    <TopSpeedBanner/>
-      <TopSpeedSecutity/>
-       <SecurityServices/>
-        <ServiceEquipments/>
-         <EventInfrastuture/>
+      <TopSpeedBanner />
+      <TopSpeedSecutity />
+      <SecurityServices />
+      <ServiceEquipments />
+      <EventInfrastuture />
     </div>
   )
 }

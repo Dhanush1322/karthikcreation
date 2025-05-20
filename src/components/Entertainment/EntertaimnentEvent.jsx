@@ -1,15 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '../../styles/Entertainment/EntertainmentEvent.css';
 
 const eventCategories = [
   {
-    image: '/entertainment/k 1.png',
-    title: 'Movies & Premiers',
-    subtitle: 'Latest blockbusters and exclusive premieres',
-  },
-  {
     image: '/entertainment/k2.png',
-    title: 'TV Shows & Serials',
+    title: 'TV Shows',
     subtitle: 'Popular shows and exclusive launches',
   },
   {
@@ -35,14 +32,25 @@ const eventCategories = [
 ];
 
 function EntertainmentEvent() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="entertainment-event-container">
-      <h2 className="event-heading">
-        Explore Event Categories
-      </h2>
+      <h2 className="event-heading">Explore Event Categories</h2>
       <div className="event-cards-wrapper">
         {eventCategories.map((event, index) => (
-          <div className="event-card" key={index}>
+          <div
+            className="event-card"
+            key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 100} // optional stagger effect
+          >
             <img src={event.image} alt={event.title} className="event-image" />
             <div className="event-info">
               <h3>{event.title}</h3>

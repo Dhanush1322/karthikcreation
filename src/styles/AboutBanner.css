@@ -1,4 +1,5 @@
 .about-banner {
+  margin-top: 100px;
   background-image: url('./img/about banner.png'); /* Replace this with the actual image path */
   background-size: cover;
   background-position: center;

@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    padding: 20px;
+    margin-top: 80px;
     transition: background-image 0.5s ease-in-out;
     display: flex;
     flex-direction: column;

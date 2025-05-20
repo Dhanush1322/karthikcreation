@@ -1,0 +1,78 @@
+.events-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.events-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.e-event-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.event-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 20px;
+}
+
+.event-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.event-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-content li {
+    border-left: 3px solid #1976d2;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.event-content li strong {
+    display: block;
+    font-weight: 600;
+    color: #000;
+}
+
+.event-content li p {
+    margin: 5px 0 8px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.event-date {
+    font-size: 0.85rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.calendar-icon {
+    font-size: 0.9rem;
+    color: #555;
+}

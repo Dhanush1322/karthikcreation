@@ -4,18 +4,22 @@ import { useState } from 'react';
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation(); // Get the current route path
+  const location = useLocation();
 
-  // Change logo based on current route
   const logoSrc = location.pathname === '/TopSpeed'
-    ? './speed/tlogo.png' // logo for Top Speed page
-    : './img/logo.png';         // default logo
+    ? './speed/tlogo.png'
+    : './img/logo.png';
+
+  // Function to handle link click and close menu
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <div className="navbar">
       {/* Logo Section */}
       <div className="logo">
-       <img src={logoSrc} alt="logo" style={{ width: '70px' }} />
+        <img src={logoSrc} alt="logo" style={{ width: '70px' }} />
       </div>
 
       {/* Hamburger Icon */}
@@ -27,13 +31,13 @@ function Nav() {
 
       {/* Links Section */}
       <div className={`links ${menuOpen ? 'active' : ''}`}>
-        <Link to="/">Home</Link>
-        <Link to="/About">About</Link>
-        <Link to="/Product">Product</Link>
-        <Link to="/Entertainment">Entertainment</Link>
-        <Link to="/TopSpeed">Top Speed Security Service</Link>
-        <Link to="/Enqiry">Client Enquiry Form</Link>
-        <Link to="/ContactUs">Contact Us</Link>
+        <Link to="/" onClick={handleLinkClick}>Home</Link>
+        <Link to="/About" onClick={handleLinkClick}>About</Link>
+        <Link to="/Product" onClick={handleLinkClick}>Product</Link>
+        <Link to="/Entertainment" onClick={handleLinkClick}>Entertainment</Link>
+        <Link to="/TopSpeed" onClick={handleLinkClick}>Top Speed Security Service</Link>
+        <Link to="/Enqiry" onClick={handleLinkClick}>Client Enquiry Form</Link>
+        <Link to="/ContactUs" onClick={handleLinkClick}>Contact Us</Link>
       </div>
     </div>
   );

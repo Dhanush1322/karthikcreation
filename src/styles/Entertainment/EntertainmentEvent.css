@@ -70,9 +70,9 @@ text-align: center;
   }
 
   .event-card {
-    width: 90%;
+    width: 100%;
     max-width: 400px;
-    margin-bottom: 20px;
+    margin: 0px;
   }
 }
 

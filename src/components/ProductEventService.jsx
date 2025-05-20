@@ -45,7 +45,7 @@ function ProductEventService() {
     <div className="product-event-service" data-aos="fade-up">
       <h2>Comprehensive Event Services</h2>
       <p className="subtext">
-        At Karthik Creations, we offer a complete range of event services designed to meet all your needs. From equipment rentals to artist coordination and security solutions, we have everything covered to make your event a success.
+        At Karthik Creations, we  offer a complete range of event services designed to meet all your needs. From equipment rentals to artist coordination and security solutions, we have everything covered to make your event a success.
       </p>
       <div className="compro-event-grid">
         {eventData.map((event, index) => (

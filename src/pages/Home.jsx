@@ -14,19 +14,19 @@ import Subscrib from '../components/Subscrib'
 function Home() {
   return (
     <div>
-       
-        <Banner/>
-        <Counts/>
-        <Aboutsection/>
-        <OurService/>
-        <OurAchivements/>
-        <LatestNews/>
-        <EventGallery/>
-        <ClientTestimonial/>
-        <OurEventProcess/>
-        <Subscrib/>
-    
-    
+
+      <Banner />
+      <Counts />
+      <Aboutsection />
+      <OurService />
+      <OurAchivements />
+      <LatestNews />
+      <EventGallery />
+      <ClientTestimonial />
+      <OurEventProcess />
+      <Subscrib />
+
+
     </div>
   )
 }

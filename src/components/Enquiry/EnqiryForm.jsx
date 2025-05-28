@@ -47,12 +47,45 @@ function EnquiryForm() {
 
         <div className="input-row">
           <div>
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" />
+          </div>
+          <div>
+            <label>Optional Name</label>
+            <input type="text" placeholder="Enter your optional name" />
+          </div>
+        </div>
+
+        <div className="input-row">
+          <div>
             <label>Email Address</label>
             <input type="email" placeholder="Enter your email address" />
           </div>
           <div>
-            <label>Phone Number</label>
-            <input type="tel" placeholder="Enter your phone number" />
+            <label>Optional Mobile Number</label>
+            <input type="tel" placeholder="Enter your optional mobile number" />
+          </div>
+        </div>
+
+        <div className="input-row">
+          <div>
+            <label>Company Address</label>
+            <input type="text" placeholder="Company address" />
+          </div>
+          <div>
+            <label>Optional Email ID</label>
+            <input type="email" placeholder="Enter your optional email id" />
+          </div>
+        </div>
+
+        <div className="input-row">
+          <div>
+            <label>Date of the Event</label>
+            <input type="date" placeholder="Enter your event date" />
+          </div>
+          <div>
+            <label>Optional Address</label>
+            <input type="text" placeholder="Enter your optional address" />
           </div>
         </div>
 

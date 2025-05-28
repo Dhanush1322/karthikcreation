@@ -7,8 +7,9 @@ function ProductBannerSection() {
     <div className="product-banner">
       <div className="product-banner-overlay">
         <div className="product-banner-content">
-          <h1>Our Products</h1>
-          <p>Excellence in design and innovation since 1905</p>
+          <h1>Our  Services</h1>
+          <p>Comprehensive event solutions tailored to create unforgettable 
+experiences for any occasion.</p>
           <div className="product-banner-buttons">
             <button className="contact-btn">
            Eqipment Decoration

@@ -15,7 +15,7 @@ const eventCategories = [
     subtitle: 'Electrifying live performances',
   },
   {
-    image: '/entertainment/k4.png',
+    image: '/entertainment/k4.jpg',
     title: 'Health & Wellness',
     subtitle: 'Premium clubs and wellness events',
   },

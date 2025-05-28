@@ -10,14 +10,15 @@ function EntertainmentBanner() {
       {/* Content container */}
       <div className="content">
         <h2 className="title">
-          Your Entertainment Partner <br />
-          <span className="highlight">with Expert Coordination</span>
+        Entertainment with Expert 
+ <br />
+          <span className="highlight">Coordination</span>
         </h2>
 
         <p className="description">
-          We specialize in seamless entertainment event management, from movie
-          premieres to live concerts. Let us coordinate your perfect entertainment
-          experience in Bangalore.
+        We specialize in seamless entertainment event management, from movie 
+premieres to live concerts. Let us coordinate your perfect entertainment 
+experience in Bangalore.
         </p>
 
         <div className="button-group">

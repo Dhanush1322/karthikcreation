@@ -11,10 +11,10 @@ function Counts() {
   });
 
   const stats = [
-    { number: 500, label: 'Events Managed' },
+    { number: 522, label: 'Events Managed' },
     { number: 98, label: 'Client satisfaction %' },
-    { number: 50, label: 'Corporate Partners' },
-    { number: 15, label: 'Years of Excellence' },
+    { number: 261, label: 'Corporate Partners' },
+    { number: 16, label: 'Years of Excellence' },
   ];
 
   return (

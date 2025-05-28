@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/OurService.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 const services = [
   {
@@ -44,12 +43,18 @@ const services = [
 ];
 
 function OurService() {
+  const [visibleCount, setVisibleCount] = useState(2);
+
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // animation duration in ms
-      once: true,      // only animate once
+      duration: 1000,
+      once: true,
     });
   }, []);
+
+  const handleViewMore = () => {
+    setVisibleCount(services.length); // Show all services
+  };
 
   return (
     <div className="services-section">
@@ -60,20 +65,21 @@ function OurService() {
       <div className="services-underline" />
 
       <div className="home-services-grid">
-        {services.map((service, index) => (
+        {services.slice(0, visibleCount).map((service, index) => (
           <div className="home-service-card" data-aos={service.animation} key={index}>
             <img src={service.image} alt={service.title} />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
             <a href="#">Learn More →</a>
           </div>
-
         ))}
+      </div>
 
-      </div>
-      <div className="cta-button" data-aos="fade-up">
-        <button>View All Services</button>
-      </div>
+      {visibleCount < services.length && (
+        <div className="cta-button" data-aos="fade-up">
+          <button onClick={handleViewMore}>View More</button>
+        </div>
+      )}
     </div>
   );
 }

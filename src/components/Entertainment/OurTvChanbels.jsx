@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
-import { FaTv } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './OurTvChannels.css';
 
 const tvChannels = [
-  'Colors TV',
-  'TV 9',
-  'Public TV',
-  'Swarna TV',
-  'zee TV',
+  { name: 'Colours TV', image: '/entertainment/t4.png' },
+  { name: 'TV 9', image: '/entertainment/t3.png' },
+  { name: 'Public TV', image: '/entertainment/t5.png' },
+  { name: 'Swarna TV', image: '/entertainment/t2.png' },
+  { name: 'Zee 5', image: '/entertainment/t1.png' },
 ];
 
 function OurTvChannels() {
@@ -32,8 +31,8 @@ function OurTvChannels() {
             data-aos="zoom-in"
             data-aos-delay={index * 100}
           >
-            <FaTv className="tv-icon" />
-            <p>{channel}</p>
+            <img src={channel.image} alt={channel.name} className="tv-logo" />
+            <p>{channel.name}</p>
           </div>
         ))}
       </div>

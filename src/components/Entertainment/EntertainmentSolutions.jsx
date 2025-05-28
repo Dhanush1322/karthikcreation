@@ -7,12 +7,12 @@ const entertainmentItems = [
   {
     title: "Play Arena & Bounces",
     description: "Fun and safe play equipment for children",
-    image: "./entertainment/ee1.png",
+    image: "./entertainment/ee2.png",
   },
   {
     title: "Cartoon Characters & Performers",
     description: "Professional live entertainer and character performers for childrens",
-    image: "./entertainment/ee2.png",
+    image: "./entertainment/ee1.png",
   },
   {
     title: "Antique Two Or Display",
@@ -22,7 +22,7 @@ const entertainmentItems = [
   {
     title: "Artificially Created outdoor flowing water fountains",
     description: "Setup for events & Weddings",
-    image: "./entertainment/ee4.png",
+    image: "./entertainment/ee3.png",
   },
   {
     title: "Selfies Booth",
@@ -32,7 +32,7 @@ const entertainmentItems = [
   {
     title: "Representing Kannada State",
     description: "Professional performers for cultural and political and many more etc..",
-    image: "./entertainment/ee2.png",
+    image: "./entertainment/dan.jpg",
   },
 ];
 

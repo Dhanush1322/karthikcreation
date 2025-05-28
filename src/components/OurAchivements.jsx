@@ -7,7 +7,7 @@ const achievements = [
   {
     title: 'Recognized as Best Event Management Company',
     description: 'Recognized for excellence in corporate event management and innovative solutions.',
-    image: '/img/hch3.png',
+    image: '/img/cc.jpg',
     tag: '🏆 National Event Industry Awards',
     highlightClass: 'highlight-blue',
   },
@@ -62,9 +62,7 @@ function OurAchivements() {
         ))}
       </div>
 
-      <div className="cta-button" data-aos="fade-up" data-aos-delay="300">
-        <button>View All Equipment</button>
-      </div>
+      
     </div>
   );
 }

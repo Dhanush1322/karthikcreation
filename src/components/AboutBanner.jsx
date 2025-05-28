@@ -1,20 +1,24 @@
 import React from 'react';
-import '../styles/AboutBanner.css'; // Make sure to create this CSS file
+import { Link } from 'react-router-dom';
+import '../styles/AboutBanner.css';
 
 function AboutBanner() {
   return (
     <div className="about-banner">
       <div className="about-banner-overlay">
         <div className="about-banner-content">
-          <h1>About Us</h1>
-          <p>Excellence in design and innovation since 1905</p>
+          <div className='about-banner-text'>
+            <h1>About Us</h1>
+            <p>Excellence in design and innovation since 1905</p>
+          </div>
+
           <div className="about-banner-buttons">
-            <button className="contact-btn">
+            <Link to="/ContactUs" className="contact-btn">
               📞 Contact us
-            </button>
-            <button className="services-btn">
+            </Link>
+            <Link to="/Product" className="services-btn">
               📋 Our Services
-            </button>
+            </Link>
           </div>
         </div>
       </div>

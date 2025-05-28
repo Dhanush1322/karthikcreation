@@ -67,7 +67,7 @@ function OurCompanyCulture() {
             <div className="caption-icon">👥</div>
             <div>
               <strong>Team Excellence</strong>
-              <div className="caption-sub">Collaboration in action</div>
+              <div className="caption-sub">The environment we create to foster creativity, collaboration, and excellence</div>
             </div>
           </div>
         </div>
@@ -87,11 +87,11 @@ function OurCompanyCulture() {
           </p>
 
           <div className="culture-tags">
-            <span>Collaborative</span>
-            <span>Innovative</span>
-            <span>Inclusive</span>
-            <span>Supportive</span>
-            <span>Growth-Oriented</span>
+            <span> Adatbality</span>
+            <span>Creative</span>
+            <span>Divergent</span>
+            <span>Decision Making</span>
+            <span>Leadership</span>
           </div>
         </div>
       </div>

@@ -18,9 +18,7 @@
 }
 
 .tv-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
   padding: 20px;
   width: 220px;
   height: 220px;
@@ -65,13 +63,19 @@
 }
 
 @media (max-width: 480px) {
+  .tv-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
   .tv-card {
-    width: 100%;
+    width: 45%; /* 2 cards per row */
     height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-left: 20px;
-     margin-right: 20px;
+    margin: 0;
   }
 
   .tv-icon {

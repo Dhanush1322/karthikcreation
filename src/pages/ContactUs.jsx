@@ -6,10 +6,10 @@ import Map from '../components/Contactus/Map'
 function ContactUs() {
   return (
     <div>
-      
-        <ContactusBanner/>
-        <ContactusSection/>
-   <Map/>
+
+      <ContactusBanner />
+      <ContactusSection />
+      <Map />
     </div>
   )
 }

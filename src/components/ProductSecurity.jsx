@@ -11,71 +11,73 @@ function ProductSecurity() {
 
   const services = [
     {
-      title: "Security Scanner",
-      image: "/Product/ps1.jpg",
+      title: "Sofas & Chairs",
+      image: "/Product/1.png",
       features: [
-        "to check carry",
-        "Scan checkpoints or trigger zones that activate scanning or alarms.",
-        "Each “point” is a node monitored by the central scanner."
+        "to Cushion Chairs ( With Cover &  Bow ) carry",
+        "Tiffany Chairs",
+        "V.VIP - Sofas Sets",
+         "V.VIP - Chairs",
+          "Wedding Sofas"
+
       ]
     },
     {
-      title: "Event Furniture",
-      image: "/Product/ps2.jpg",
+      title: "Sound & Lighting",
+      image: "/Product/2.png",
       features: [
-        "Corporate Event Chairs",
-        "Exhibition Chairs",
-        "Cushion Sofas",
-        "Foldable Beds"
-      ]
-    },
-    {
-      title: "Security Equipment Package",
-      image: "/Product/ps3.jpg",
-      features: [
-        "Male & Female Security Guards",
-        "Bouncers (Men/Women)",
-        "CCTV Cameras",
-        "Baggage Scanners"
-      ]
-    },
-    {
-      title: "Event Staff & Services",
-      image: "/Product/ps4.jpg",
-      features: [
-        "Hostess - Men / Women",
-        "Housekeeping Staff",
-        "Ceremonial Dressed (Maharaja)",
-        "Cue Managers"
-      ]
-    },
-    {
-      title: "Event Support Equipment",
-      image: "/Product/ps5.jpg",
-      features: [
-        "LED Mobile Chargers",
-        "Megaphones",
-        "Cartoon Characters",
-        "Barricades & Bollards"
+        "podiums",
+        "Professional Lighting and sound",
+        "Microphones",
+        "Stage Equipment"
       ]
     },
     {
       title: "Cooling Solutions",
-      image: "/Product/ps6.jpg",
+      image: "/Product/4.png",
       features: [
         "A/C Units",
         "A/C Towers",
         "Coolers",
         "Ventilation Systems"
       ]
+    },
+    {
+      title: "Event Support Equipment",
+      image: "/Product/6.png",
+      features: [
+        "Stage step all size",
+        
+      ]
+    },
+    {
+      title: "Maxima Stalls",
+      image: "/Product/3.png",
+      features: [
+        "German Pagoda ( All Size )",
+        "Indian Pagodas ( All Size )",
+        "Barricades",
+        "Mojo Barricades"
+      ]
+    },
+    {
+      title: "Event Furniture",
+      image: "/Product/5.png",
+      features: [
+        "Carpets ( All Colors  & Designs)",
+        "Wooden Tables ( 6 x 2 )",
+        "Scaffoldings",
+        "Carpets ( All Colors  & Designs)",
+        "Truss"
+      ]
     }
   ];
 
   return (
     <div className="security-section" data-aos="fade-up">
-      <h2 data-aos="fade-down">KARTHIK CREATIONS & TOP SPEED SECURITY SERVICES</h2>
+      <h2 data-aos="fade-down">KARTHIK CREATIONS SERVICES</h2>
       <p data-aos="fade-down" data-aos-delay="100">
-        End-to-End Event Services & Equipment Solutions - Your Complete Event Management Partner
+          End-to-End Event Services & Equipment Solutions
       </p>
 
       <div className="security-grid">

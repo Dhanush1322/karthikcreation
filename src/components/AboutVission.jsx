@@ -21,12 +21,13 @@ function AboutVission() {
         </div>
         <h3>Our Vision</h3>
         <p>
-          To be the most trusted and innovative design solutions provider, creating spaces that
-          inspire and transform lives while setting new standards of excellence in the industry.
+         Growth & Success with comes through Strength of all the team 
+members of the firm to be Dedicated,  Intelligent, Loyal, Smart working, 
+and United..
         </p>
         <ul>
           <li><FaCheckCircle /> Leading innovation in design solutions</li>
-          <li><FaCheckCircle /> Creating transformative spaces</li>
+          <li><FaCheckCircle />Creating transformative spaces</li>
           <li><FaCheckCircle /> Setting new industry standards</li>
         </ul>
       </div>
@@ -37,8 +38,11 @@ function AboutVission() {
         </div>
         <h3>Our Mission</h3>
         <p>
-          To deliver exceptional design solutions that exceed client expectations by combining
-          creativity, technical expertise, and unwavering commitment to quality in every project we undertake.
+          Be a reliable contributor for an environment that encourages Professional
+ Excellence, develop and  maintain long-term Business Relationship
+ with our Customers, as services providers in the field of  
+Events & Expo’s – ( B2B & B2C ), Corporate Events, Conferences, 
+Weddings, Govt.Events & Functions,  Weddings & Entertainment.
         </p>
         <ul>
           <li><FaCheckCircle /> Exceeding client expectations</li>

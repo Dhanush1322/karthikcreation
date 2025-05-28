@@ -10,21 +10,21 @@ const EventInfrastructure = () => {
 
   const infraItems = [
     {
-      title: 'Canopies & Pagodas',
-      desc: 'Professional crowd control and traffic management solutions for events of all sizes.',
+      title: 'German Pagodas & Canopies ',
+      desc: 'These solid structures are mainly used for outdoor services with all sizes provided by us.',
       image: '/speed/e1.png',
       icon: '/speed/ei1.png',
     },
     {
-      title: 'Podiums ,Lights & Sound Systems',
-      desc: 'Elegant shelter solutions for outdoor events, available in various sizes and designs.',
-      image: '/speed/e2.png',
+      title: 'Barigates',
+      desc: 'Professional crowd control and traffic management solutions  are provided by us',
+      image: '/speed/e2.jpg',
       icon: '/speed/ei2.png',
     },
     {
-      title: 'Barricades & Bollards',
-      desc: 'Professional presentation equipment including podiums, microphones, and megaphones for events.',
-      image: '/speed/e3.png',
+      title: 'Single Seater & TwoSeaters sofa',
+      desc: 'Multiple sofas and chairs are different shape and size are available with us',
+      image: '/speed/e3.jpg',
       icon: '/speed/ei3.png',
     }
   ];

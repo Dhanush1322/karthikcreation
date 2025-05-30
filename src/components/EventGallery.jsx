@@ -5,44 +5,120 @@ import 'aos/dist/aos.css';
 
 const events = [
   {
-    title: 'Annual Tech Summit',
-    category: 'Corporate',
-    description: 'Corporate Conference | Mumbai',
+    title: 'Political Functions',
+    category: 'All',
+    description: 'Corporate Conference ',
     image: './gallery/g6.png',
   },
   {
     title: 'Sharma-Patel Wedding',
-    category: 'Wedding',
-    description: 'Wedding Reception | Delhi',
-    image: './gallery/g5.png',
+    category: 'All',
+    description: 'Wedding Reception',
+    image: './gallery/g5.jpg',
   },
   {
-    title: 'Smartphone X Launch',
-    category: 'Corporate',
-    description: 'Product Launch | Bangalore',
-    image: './gallery/g4.png',
+    title: 'Expo & Weddings',
+    category: 'All',
+    description: 'Product Launch ',
+    image: './gallery/g4.jpg',
   },
   {
-    title: 'Global Trade Expo',
-    category: 'Exhibitions',
-    description: 'Exhibition | Chennai',
-    image: './gallery/g3.png',
+    title: ' Expos & Corporate Events',
+    category: 'All',
+    description: 'Exhibition',
+    image: './gallery/g3.jpg',
   },
   {
-    title: 'Summer Music Festival',
-    category: 'Entertainments',
-    description: 'Concert | Hyderabad',
-    image: './gallery/g2.png',
+    title: 'Cultural functions',
+    category: 'All',
+    description: 'Cult',
+    image: './gallery/g2.jpg',
   },
   {
     title: 'Business Excellence Awards',
-    category: 'Corporate',
-    description: 'Awards Ceremony | Pune',
-    image: './gallery/g1.png',
+    category: 'All',
+    description: 'Awards Ceremony',
+    image: './gallery/g1.jpg',
   },
+
+  {
+    category: 'Corporate',
+    image: './gallery/cor1.jpg',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/cor2.jpg',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/cor3.png',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/cor4.png',
+  },
+
+  {
+    category: 'Corporate',
+    image: './gallery/cor5.png',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/cor6.png',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/cor7.png',
+  },
+  {
+    category: 'Corporate',
+    image: './gallery/cor8.png',
+  },
+   {
+    category: 'Corporate',
+    image: './gallery/cor9.png',
+  },
+   {
+    category: 'Corporate',
+    image: './gallery/cor10.png',
+  },
+   {
+    category: 'Corporate',
+    image: './gallery/cor11.png',
+  },
+   {
+    category: 'Corporate',
+    image: './gallery/cor12.png',
+  },
+   {
+    category: 'Corporate',
+    image: './gallery/cor13.png',
+  },
+   {
+    category: 'Corporate',
+    image: './gallery/cor14.png',
+  },
+   {
+    category: 'Corporate',
+    image: './gallery/cor15.png',
+  },
+
+
 ];
 
-const categories = ['All', 'Corporate', 'Wedding', 'Exhibitions', 'Operations', 'Entertainments'];
+const categories = ['All', 'Corporate', 'Wedding', 'Exhibitions', 'Operations', 'Entertainments', 'Products'];
 
 function EventGallery() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -88,11 +164,16 @@ function EventGallery() {
             data-aos-delay={idx * 150}
           >
             <img src={event.image} alt={event.title} />
-            <h3>{event.title}</h3>
-            <p>{event.description}</p>
+            {activeCategory === 'All' && (
+              <>
+                <h3>{event.title}</h3>
+                <p>{event.description}</p>
+              </>
+            )}
           </div>
         ))}
       </div>
+
     </div>
   );
 }

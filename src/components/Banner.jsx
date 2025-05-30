@@ -8,17 +8,17 @@ function Banner() {
         {
             title: <>Creating Memorable<br /><span style={{ color: '#3B82F6' }}>Event</span> That Last a<br />Lifetime</>,
             subtitle: "From corporate gatherings to dream weddings, we deliver exceptional event management services tailored to your unique vision and requirement.",
-            backgroundImage: "./img/banner.png"
+            backgroundImage: "./img/banner.jpg"
         },
         {
-            title: <>Making Every <span style={{ color: '#3B82F6' }}>Moment</span> Special<br />With Perfect Planning</>,
-            subtitle: "We bring creativity, precision, and passion to plan and execute events that leave lasting impressions.",
-            backgroundImage: "./img/banner2.png"
+            title: <>Creating Memorable<br /><span style={{ color: '#3B82F6' }}>Event</span> That Last a<br />Lifetime</>,
+            subtitle: "From corporate gatherings to dream weddings, we deliver exceptional event management services tailored to your unique vision and requirement.",
+            backgroundImage: "./img/banner2.jpg"
         },
         {
-            title: <>Your <span style={{ color: '#3B82F6' }}>Dream Event</span><br />Starts Here</>,
-            subtitle: "Let us turn your ideas into reality with our expert team and flawless execution.",
-            backgroundImage: "./img/banner3.png"
+            title: <>Creating Memorable<br /><span style={{ color: '#3B82F6' }}>Event</span> That Last a<br />Lifetime</>,
+            subtitle: "From corporate gatherings to dream weddings, we deliver exceptional event management services tailored to your unique vision and requirement.",
+            backgroundImage: "./img/banner3.jpg"
         }
     ];
 

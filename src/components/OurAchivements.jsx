@@ -41,7 +41,7 @@ function OurAchivements() {
       <p className="section-subheading" data-aos="fade-up" data-aos-delay="100">
         We have been working on related Planning, and Execution from attention to detail, proportions and scale,
         together with commonsense ensure the finished concept with the Right Solution and Judgment.
-        We have Achieved in providing services at all of Places—Public and Private, Institutional, Commercial, 
+        We have Achieved in providing services at all of Places—Public and Private, Institutional, Commercial,
         Residential, Schools, Hospitals, Larger mixed Communities, Institutions, Apartments, Houses, etc.
       </p>
       <div className="underline" data-aos="zoom-in" />
@@ -58,11 +58,19 @@ function OurAchivements() {
             <h3>{item.title}</h3>
             <p>{item.description}</p>
             <span className="tag">{item.tag}</span>
+            &nbsp; &nbsp;<a
+              href="/pdfs/sample.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#3E87FD' }}
+            >
+              Learn More →
+            </a>
           </div>
         ))}
       </div>
 
-      
+
     </div>
   );
 }

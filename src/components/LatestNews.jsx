@@ -84,12 +84,20 @@ function LatestNews() {
             <h3>{news.title}</h3>
             <p>{news.description}</p>
             {news.list.length > 0 && (
-              <ul style={{ marginLeft: '20px' }}>
+              <ul style={{ marginLeft: '20px', paddingLeft: '20px', listStyleType: 'disc' }}>
                 {news.list.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>
             )}
+           &nbsp;  &nbsp; &nbsp;<a
+              href="/pdfs/sample.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#3E87FD', marginTop: '10px', display: 'inline-block' }}
+            >
+              Learn More →
+            </a>
           </div>
         ))}
       </div>

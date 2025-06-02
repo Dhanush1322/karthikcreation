@@ -63,7 +63,7 @@ const eventsData = [
       },
       {
         name: "House Warming ceremony",
-        description: "Housewarming invitation to celebrate a new chapter of warmth, love, and togetherness.",
+        description: "We are delighted to invite you to the Housewarming Ceremony of our new home.Your presence will make this special occasion even more memorable as we step into a new chapter of warmth, love, and togetherness.",
         date: "June 28, 2025",
       },
     ],

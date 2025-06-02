@@ -7,7 +7,7 @@ const tvChannels = [
   { name: 'Colours TV', image: '/entertainment/t4.png' },
   { name: 'TV 9', image: '/entertainment/t3.png' },
   { name: 'Public TV', image: '/entertainment/t5.png' },
-  { name: 'Swarna TV', image: '/entertainment/t2.png' },
+  { name: 'Swarna TV', image: '/entertainment/t2.jpg' },
   { name: 'Zee 5', image: '/entertainment/t1.png' },
 ];
 

@@ -45,7 +45,22 @@
     color: #111827;
     margin-bottom: 16px;
   }
-  
+  .culture-tags img {
+  width: 614px;
+  height: 199px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin-top: 20px; /* Optional spacing from tags */
+}
+
+/* Optional absolute positioning (if needed) */
+.positioned-image {
+  position: absolute;
+  top: 1921px;
+  left: 100px;
+}
+
   .culture-text p {
     font-size: 18px;
     color: #4b5563;
@@ -77,7 +92,7 @@
   
   .culture-images img {
     width: 100%;
-    height: 160px;
+    height: 270px;
     object-fit: cover;
     border-radius: 12px;
   }
@@ -130,60 +145,79 @@
   padding: 20px;
 }
 
-/* Stack elements vertically on small screens */
 @media (max-width: 768px) {
-  .culture-header h2 {
-    font-size: 32px;
-  }
-
-  .culture-header p {
-    font-size: 16px;
-  }
-
-  .culture-text h3 {
-    font-size: 24px;
-  }
-
-  .culture-text p {
-    font-size: 16px;
-  }
-
   .culture-section,
   .culture-section.reverse {
     flex-direction: column !important;
     gap: 20px;
   }
 
-  .culture-text,
-  .culture-image-wrapper,
-  .culture-images {
-    min-width: 100%;
+  .culture-header h2 {
+    font-size: 28px;
+  }
+
+  .culture-header p {
+    font-size: 15px;
+  }
+
+  .culture-text {
     width: 100%;
   }
 
-  .culture-images {
+  .culture-text h3 {
+    font-size: 22px;
+  }
+
+  .culture-text p {
+    font-size: 15px;
+  }
+
+  .culture-tags {
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .culture-tags span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .culture-tags img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 10px;
+  }
+
+  .culture-images {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .culture-images img {
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
   }
 
   .culture-main-image {
     height: 200px;
+    border-radius: 12px;
   }
 
   .image-caption {
-    flex-direction: row;
+    bottom: 10px;
+    left: 10px;
     font-size: 11px;
+    padding: 8px 10px;
   }
 
   .caption-icon {
+    font-size: 14px;
     padding: 4px;
-    font-size: 12px;
   }
 
   .caption-sub {
-    font-size: 11px;
+    font-size: 10px;
   }
 }

@@ -52,8 +52,9 @@ function Footer() {
             Balgasangadhar Nagar, Mallathahalli,<br />
             Bangalore-560056.
           </p>
-          <p>+91 95384 89991 / 98455 85425</p>
-          <p>info@karthikcreations.com</p>
+          <p>+91 73530 00044 / 98455 85425</p>
+          <p>karthikcreations.2011@gmail.com/
+           topspeedsec@2017@gmail.com</p>
           <p>Mon-Fri: 9AM-6PM</p>
         </div>
       </div>

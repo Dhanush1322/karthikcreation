@@ -37,13 +37,15 @@ function OurCompanyCulture() {
               growing professionally and personally.
             </p>
 
-            <div className="culture-tags">
-              <span>Collaborative</span>
-              <span>Innovative</span>
-              <span>Inclusive</span>
-              <span>Supportive</span>
-              <span>Growth-Oriented</span>
-            </div>
+           <div className="culture-tags">
+  <span>Adatbality</span>
+  <span>Creative</span>
+  <span>Divergent Thinking</span>
+  <span>Leadership</span>
+  <span>Decision Making</span>
+  <img src="./img/ab.jpg" alt="" />
+</div>
+
           </div>
 
           <div className="culture-images" data-aos="fade-left" data-aos-delay="600">
@@ -87,9 +89,9 @@ function OurCompanyCulture() {
           </p>
 
           <div className="culture-tags">
-            <span> Adatbality</span>
+            <span>  Adatbality</span>
             <span>Creative</span>
-            <span>Divergent</span>
+            <span> Divergent Thinking</span>
             <span>Decision Making</span>
             <span>Leadership</span>
           </div>

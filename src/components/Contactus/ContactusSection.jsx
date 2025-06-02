@@ -21,15 +21,18 @@ function ContactusSection() {
         <div className="contact-details">
           <div className="contact-item">
             <div className="icon-circle"><Phone size={18} /></div>
-            <span>+91 98765 43210</span>
+            <span>+91 73530 00044 / 98455 85425</span>
           </div>
           <div className="contact-item">
             <div className="icon-circle"><Mail size={18} /></div>
-            <span>info@eventsupport.com</span>
+            <span>karthikcreations.2011@gmail.com/ topspeedsec@2017@gmail.com</span>
           </div>
           <div className="contact-item">
             <div className="icon-circle"><MapPin size={18} /></div>
-            <span>123 Main Street, Bengaluru, India</span>
+            <span>KARTHIK CREATIONS
+# 897/3/7, NGEF Layout, 60FT Road,
+Balgasangadhar Nagar, Mallathahalli,
+Bangalore-560056.</span>
           </div>
         </div>
       </div>

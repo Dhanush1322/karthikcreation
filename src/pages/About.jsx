@@ -7,19 +7,18 @@ import OurCompanycuture from '../components/OurCompanycuture'
 import Legacy from '../components/Legacy'
 import AboutVission from '../components/AboutVission'
 import OurCore from '../components/OurCore'
-import SpeakforthemselfeAbout from '../components/SpeakforthemselfeAbout'
+
 function About() {
   return (
     <div>
-   
-        <AboutBanner/>
-        <AboutDirectors/>
-    
-        <OurCompanycuture/>
-        <Legacy/>
-        <AboutVission/>
-        <OurCore/>
-        <SpeakforthemselfeAbout/>
+
+      <AboutBanner />
+      <AboutDirectors />
+
+      <OurCompanycuture />
+      <Legacy />
+      <AboutVission />
+      <OurCore />
       
     </div>
   )

@@ -20,18 +20,18 @@ const eventData = [
     image: '/Product/p4.jpg',
   },
   {
-    title: 'Government & Political Events',
-    description: 'Premium rentals for lighting, staging, and decorations.',
+    title: 'Equipment & Decorations',
+    description: 'Premium equipment rentals including sound systems, lighting, stages, furniture, and themed decorations for any event.',
     image: '/Product/p3.jpg',
   },
   {
-    title: 'B2B & B2C Exhibitions',
-    description: 'Access to performers, DJs, and coordination services.',
+    title: 'Artist Coordination',
+    description: 'Access to our extensive network of performers, musicians, DJs, and entertainers with professional coordination services.',
     image: '/Product/p2.jpg',
   },
   {
-    title: 'Corporate & Commercial Events',
-    description: 'Security services with trained staff and control systems.',
+    title: 'Security Solutions',
+    description: 'Comprehensive security services including trained personnel, access control systems, and emergency response coordination.',
     image: '/Product/p1.jpg',
   },
 ];

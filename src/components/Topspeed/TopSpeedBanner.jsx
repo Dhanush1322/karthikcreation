@@ -1,6 +1,6 @@
 
 import '../../styles/Topspeed/TopSpeedBanner.css';
-
+import { Link } from 'react-router-dom';
 function TopSpeedBanner() {
     return (
         <div className="Topspeed-banner">
@@ -21,8 +21,8 @@ function TopSpeedBanner() {
                 </p>
 
                 <div className="button-group">
-
-                    <button className="btn-secondary">Contact Us</button>
+<Link to='/ContactUs'><button className="btn-secondary">Contact Us</button></Link>
+                    
                 </div>
             </div>
         </div>

@@ -35,7 +35,7 @@ const services = [
     animation: 'fade-right'
   },
    {
-    title: 'OperationsSecurity Solutions',
+    title: 'Operations Security Solutions',
     image: '/img/c4.png',
     description: 'Comprehensive security services with trained personnel, CCTV monitoring, access control, and emergency response planning for all event sizes',
     animation: 'fade-right'

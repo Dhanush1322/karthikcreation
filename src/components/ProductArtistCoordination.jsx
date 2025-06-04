@@ -1,40 +1,51 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/ProductArtistCoordination.css';
 import { FaStar } from 'react-icons/fa';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function ProductArtistCoordination() {
+  const [artists, setArtists] = useState([]);
+  const [images, setImages] = useState({});
+  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODA5YzZlMzE4NGRkOGQwNWQxMjg5YjgiLCJlbWFpbCI6Im11aGFtbWFkc2hvYWliMjgwM0BnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJhdXRoVG9rZW4iOnRydWUsImlhdCI6MTc0ODQzNDA4MiwiZXhwIjoxODM0ODM0MDgyfQ.olVsB5_gf6j4qSv8TitQfkoAQj8Qh6RGWzQuTFHqP84'; // Replace with your valid token
+const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1000 });
-  }, []);
 
-  const artists = [
-    {
-      title: "Harmony Collective",
-      rating: 4.8,
-      events: 42,
-      image: "./Product/Dholu Kulita1.png"
-    },
-    {
-      title: "DJ Maxwell",
-      rating: 5.0,
-      events: 78,
-      image: "./Product/Lights Sound & Setup1.png"
-    },
-    {
-      title: "Rhythm Fusion Dance Company",
-      rating: 4.2,
-      events: 25,
-      image: "./Product/Lights Sound & Setup2.png"
-    },
-    {
-      title: "Harmony Collective",
-      rating: 4.2,
-      events: 25,
-      image: "./Product/Lights Sound & Setup3.png"
-    },
-  ];
+    // Fetch artist details
+    fetch('http://karthikcreation.ap-1.evennode.com/api/admin/getAllArtist', {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.Status) {
+          setArtists(data.data);
+
+          // Fetch image for each artist
+          data.data.forEach(artist => {
+            fetch(`http://karthikcreation.ap-1.evennode.com/api/admin/viewArtistFile/${artist.img}`, {
+              headers: {
+                'Authorization': `Bearer ${token}`
+              }
+            })
+              .then(res => res.blob())
+              .then(blob => {
+                const imageUrl = URL.createObjectURL(blob);
+                setImages(prev => ({ ...prev, [artist._id]: imageUrl }));
+              })
+              .catch(err => console.error('Image fetch error:', err));
+          });
+        } else {
+          console.error('Failed to fetch artists');
+        }
+      })
+      .catch(err => console.error('API error:', err));
+  }, []);
 
   return (
     <div className="artist-section" data-aos="fade-up">
@@ -45,18 +56,25 @@ function ProductArtistCoordination() {
 
       <div className="artist-grid">
         {artists.map((artist, index) => (
-          <div className="artist-card" key={index} data-aos="zoom-in" data-aos-delay={index * 100}>
+          <div className="artist-card" key={artist._id} data-aos="zoom-in" data-aos-delay={index * 100}>
             <div className="artist-image">
-              <img src={artist.image} alt={artist.title} />
+              {images[artist._id] ? (
+                <img src={images[artist._id]} alt={artist.title} />
+              ) : (
+                <div style={{ height: '200px', backgroundColor: '#f0f0f0' }}>Loading image...</div>
+              )}
+              <span className="badge">
+                {artist.availability_status === 1 ? "Available" : "Not Available"}
+              </span>
             </div>
             <div className="artist-info">
+              <h4>{artist.title}</h4>
               <div className="artist-rating">
                 <FaStar className="star-icon" />
-                <span>{artist.rating} ({artist.events} events)</span>
+                <span>{artist.rating} ({artist.number_of_events} events)</span>
               </div>
-              
             </div>
-            <button className="book-btn">Book Now</button>
+            <button className="book-btn" onClick={()=> navigate('/Enqiry')}>Book Now</button>
           </div>
         ))}
       </div>

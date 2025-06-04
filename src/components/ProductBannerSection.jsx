@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ProductBanner.css';
-
+import { Link } from 'react-router-dom';
 function ProductBannerSection() {
   return (
     <div className="product-banner">
@@ -22,10 +22,15 @@ function ProductBannerSection() {
             experiences for any occasion.
           </p>
           <div className="product-banner-buttons">
+            <Link to='/ContactUs'><button className="contact-btn">Contact Us</button></Link>
+            
+            
+          </div>
+          {/* <div className="product-banner-buttons">
             <button className="contact-btn">Equipment Decoration</button>
             <button className="services-btn">Artist Coordination</button>
             <button className="services-btn">Security Solutions</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,28 +1,37 @@
+/* Base styles you already have (keep them as is) */
 .event-gallery-section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .event-gallery-title {
-    font-size: 36px;
-    font-weight: bold;
-  }
-  
-  .subtitle {
-    color: #555;
-    margin-top: 10px;
-  }
-  
-  .underline {
-    width: 60px;
-    height: 3px;
-    background: #3b82f6;
-    margin: 12px auto 30px auto;
-    border-radius: 2px;
-  }
-  
- .event-gallery-category-tabs {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.event-gallery-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 10px;
+}
+
+.event-media {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background: #3b82f6;
+  margin: 12px auto 30px auto;
+  border-radius: 2px;
+}
+
+.event-gallery-category-tabs {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -34,63 +43,114 @@
   width: 850px;
   height: 50px;
 
-  /* Add bottom shadow */
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-  
-  .event-gallery-category-tabs button {
-    padding: 8px 20px;
-    border: none;
-   
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: all 0.3s ease;
+.event-gallery-category-tabs button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.event-gallery-category-tabs button.active,
+.event-gallery-category-tabs button:hover {
+  background-color: #3b82f6;
+  color: black;
+}
+
+.event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.event-gallery-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.event-gallery-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-gallery-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-gallery-card h3 {
+  font-size: 18px;
+  margin: 15px 15px 5px 15px;
+}
+
+.event-gallery-card p {
+  color: #666;
+  margin: 0 15px 15px 15px;
+  font-size: 14px;
+}
+
+
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+
+@media (max-width: 768px) {
+  .event-gallery-section {
+    padding: 40px 10px;
   }
-  
-  .event-gallery-category-tabs button.active,
-  .event-gallery-category-tabs button:hover {
-    background-color: #3b82f6;
-    color: black;
+
+  .event-gallery-title {
+    font-size: 28px;
   }
-  
-  .event-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+
+  .subtitle {
+    font-size: 15px;
+    margin-top: 8px;
   }
-  
-  .event-gallery-card {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1); /* right and bottom shadow */
-    width: 400px;
-    text-align: left;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  
-  .event-gallery-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .event-gallery-card img {
+
+  .event-gallery-category-tabs {
+    margin-left: 0;
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: auto;
+    gap: 8px;
+    padding: 8px 10px;
+    justify-content: flex-start;
   }
-  
-  .event-gallery-card h3 {
-    font-size: 18px;
-    margin: 15px 15px 5px 15px;
-  }
-  
-  .event-gallery-card p {
-    color: #666;
-    margin: 0 15px 15px 15px;
+
+  .event-gallery-category-tabs button {
+    padding: 6px 14px;
     font-size: 14px;
   }
-  
+
+  .event-grid {
+    gap: 20px;
+  }
+
+  .event-gallery-card {
+    width: 100%; /* Full width on mobile */
+    max-width: 400px; /* Optional max width to prevent too big */
+    margin: 0 auto;
+  }
+
+  .event-gallery-card h3 {
+    font-size: 16px;
+    margin: 12px 12px 5px 12px;
+  }
+
+  .event-gallery-card p {
+    font-size: 13px;
+    margin: 0 12px 12px 12px;
+  }
+
+  .event-media {
+    height: 160px; /* Slightly smaller for mobile */
+  }
+}

@@ -46,7 +46,7 @@ function SecurityServices() {
                 <h3 className="security-title">{service.title}</h3>
               </div>
               <p className="security-desc">{service.description}</p>
-              <a className="learn-more" href="#">Learn more →</a>
+              {/* <a className="learn-more" href="#">Learn more →</a> */}
             </div>
           </div>
         ))}

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../styles/Subscrib.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { Link } from 'react-router-dom';
 function Subscrib() {
   useEffect(() => {
     AOS.init({
@@ -20,8 +20,13 @@ function Subscrib() {
         Let's collaborate to bring your vision to life with our expertise in event management
       </p>
       <div className="subscribe-buttons" data-aos="zoom-in" data-aos-delay="300">
-        <button className="btn-primary">Contact Us Today</button>
-        <button className="btn-outline">Explore Packages</button>
+       <Link to="/ContactUs">
+  <button className="btn-primary">Contact Us Today</button>
+</Link>
+
+<Link to="/Product">
+  <button className="btn-outline">Explore Products</button>
+</Link>
       </div>
     </div>
   );

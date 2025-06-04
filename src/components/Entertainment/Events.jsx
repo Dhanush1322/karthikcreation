@@ -10,7 +10,7 @@ const eventsData = [
     image: "./entertainment/p.png",
     items: [
       {
-        name: "Marathan",
+        name: "Marathon",
         description: "A comprehensive wellness program featuring yoga, meditation, and nutrition workshops.",
         date: "June 5-6, 2025",
       },

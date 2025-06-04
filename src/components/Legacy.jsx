@@ -10,7 +10,7 @@ const milestones = [
     description: "Karthik Creation's was established by Mr. Mahantesh RS with a vision to provide innovative design solutions to the local market.",
   },
   {
-    year: '1925',
+    year: '2005',
     title: 'First Major Project',
     description: 'Completed our first major commercial project, establishing our reputation for quality and attention to detail.',
   },
@@ -20,7 +20,7 @@ const milestones = [
     description: 'Expanded our services to include comprehensive design solutions and launched our sister concern firm – "Top Speed".',
   },
   {
-    year: '1985',
+    year: '2010',
     title: 'Industry Recognition',
     description: 'Received our first industry award for excellence in design and customer satisfaction, marking our position as an industry leader.',
   },

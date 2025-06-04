@@ -48,7 +48,7 @@ const EventInfrastructure = () => {
               <div className="infra-icon"><img src={item.icon} alt="" /></div>
               <h3 className="infra-card-title">{item.title}</h3>
               <p className="infra-card-desc">{item.desc}</p>
-              <a href="#" className="infra-link">Read more →</a>
+              {/* <a href="#" className="infra-link">Read more →</a> */}
             </div>
           </div>
         ))}

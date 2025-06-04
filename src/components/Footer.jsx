@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Footer.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer className="footer">
@@ -23,24 +23,34 @@ function Footer() {
         <div className="footer-column">
           <h4>Quick Links</h4>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Packages</li>
-            <li>Gallery</li>
-            <li>Contact</li>
+         <Link to='/'> <li>Home</li></Link>
+           
+             <Link to='/About'> <li>About Us</li></Link>
+           
+             <Link to='/Product'>  <li>Services</li></Link>
+          
+           <Link to='/Enqiry'> <li>Enquiry</li></Link>
+           
+             <Link to='/ContactUs'>  <li>Contact Us</li></Link>
+          
           </ul>
         </div>
 
         <div className="footer-column">
           <h4>Our Services</h4>
           <ul>
-            <li>Corporate Events</li>
-            <li>Wedding Management</li>
-            <li>Equipment Rentals</li>
-            <li>Artist Coordination</li>
-            <li>Security Solutions</li>
-            <li>Exhibition Management</li>
+             <Link to='/Entertainment'><li>Corporate Events</li></Link>
+            
+             <Link to=''> <li>Wedding Management</li></Link>
+           
+             <Link to=''>  <li>Equipment Rentals</li></Link>
+          
+             <Link to=''> <li>Artist Coordination</li></Link>
+           
+             <Link to=''> <li>Security Solutions</li></Link>
+           
+             <Link to=''><li>Exhibition Management</li></Link>
+            
           </ul>
         </div>
 
@@ -55,7 +65,7 @@ function Footer() {
           <p>+91 73530 00044 / 98455 85425</p>
           <p>karthikcreations.2011@gmail.com/
            topspeedsec@2017@gmail.com</p>
-          <p>Mon-Fri: 9AM-6PM</p>
+          <p>Mon - Sun : 9AM - 6PM</p>
         </div>
       </div>
 

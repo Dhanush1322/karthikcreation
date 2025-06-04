@@ -10,6 +10,7 @@ const achievements = [
     image: '/img/cc.jpg',
     tag: '🏆 National Event Industry Awards',
     highlightClass: 'highlight-blue',
+    file: '/img/event-management.jpeg', // unique file
   },
   {
     title: 'Expos and Events catered by Us as a vendor to Our Clients Annually',
@@ -17,6 +18,7 @@ const achievements = [
     image: '/img/hch1.png',
     tag: '🎧 Professional-grade Equipment',
     highlightClass: '',
+    file: '/pdfs/event-management.jpeg', // unique file
   },
   {
     title: 'Our Sucessful Services catered by Us',
@@ -24,6 +26,7 @@ const achievements = [
     image: '/img/hch2.png',
     tag: '✅ TechCorp International',
     highlightClass: 'highlight-green',
+    file: '/pdfs/success-story.pdf', // unique file
   },
 ];
 
@@ -59,13 +62,14 @@ function OurAchivements() {
             <p>{item.description}</p>
             <span className="tag">{item.tag}</span>
             &nbsp; &nbsp;<a
-              href="/pdfs/sample.pdf"
+              href={item.file}
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: '#3E87FD' }}
             >
               Learn More →
             </a>
+
           </div>
         ))}
       </div>

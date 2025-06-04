@@ -3,7 +3,7 @@ import '../styles/AboutDirectors.css'; // Your CSS file
 import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { FaSquareXTwitter } from "react-icons/fa6";
 function AboutDirectors() {
   useEffect(() => {
     AOS.init({
@@ -53,7 +53,7 @@ function AboutDirectors() {
 
           <div className="about-social-icons flex" data-aos="zoom-in" data-aos-delay="600">
             <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
-            <a href="#" aria-label="Twitter"><FaTwitter /></a>
+            <a href="#" aria-label="Twitter"><FaSquareXTwitter /></a>
           </div>
         </div>
       </div>

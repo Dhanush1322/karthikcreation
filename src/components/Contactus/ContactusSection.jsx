@@ -34,7 +34,7 @@ function ContactusSection() {
     const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODA5YzZlMzE4NGRkOGQwNWQxMjg5YjgiLCJlbWFpbCI6Im11aGFtbWFkc2hvYWliMjgwM0BnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJhdXRoVG9rZW4iOnRydWUsImlhdCI6MTc0ODQzNDA4MiwiZXhwIjoxODM0ODM0MDgyfQ.olVsB5_gf6j4qSv8TitQfkoAQj8Qh6RGWzQuTFHqP84";
 
     try {
-      const response = await fetch('http://karthikcreation.ap-1.evennode.com/api/user/addMessages', {
+      const response = await fetch('https://karthikcreation.ap-1.evennode.com/api/user/addMessages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

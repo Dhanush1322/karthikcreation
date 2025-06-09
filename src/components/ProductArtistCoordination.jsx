@@ -14,7 +14,7 @@ const navigate = useNavigate();
     AOS.init({ duration: 1000 });
 
     // Fetch artist details
-    fetch('http://karthikcreation.ap-1.evennode.com/api/admin/getAllArtist', {
+    fetch('https://karthikcreation.ap-1.evennode.com/api/admin/getAllArtist', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -28,7 +28,7 @@ const navigate = useNavigate();
 
           // Fetch image for each artist
           data.data.forEach(artist => {
-            fetch(`http://karthikcreation.ap-1.evennode.com/api/admin/viewArtistFile/${artist.img}`, {
+            fetch(`https://karthikcreation.ap-1.evennode.com/api/admin/viewArtistFile/${artist.img}`, {
               headers: {
                 'Authorization': `Bearer ${token}`
               }

@@ -29,7 +29,7 @@ function EventGallery() {
   const fetchGallery = async () => {
     try {
       const res = await axios.get(
-        'http://karthikcreation.ap-1.evennode.com/api/admin/getAllEventGallery',
+        'https://karthikcreation.ap-1.evennode.com/api/admin/getAllEventGallery',
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -76,7 +76,7 @@ function EventGallery() {
   const fetchImageBlob = async (filename) => {
     try {
       const res = await axios.get(
-        `http://karthikcreation.ap-1.evennode.com/api/admin/viewEventGalleryFile/${filename}`,
+        `https://karthikcreation.ap-1.evennode.com/api/admin/viewEventGalleryFile/${filename}`,
         {
           headers: { Authorization: `Bearer ${token}` },
           responseType: 'blob',

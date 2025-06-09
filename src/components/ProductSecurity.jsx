@@ -14,7 +14,7 @@ function ProductSecurity() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
 
-    fetch('http://karthikcreation.ap-1.evennode.com/api/admin/getService', {
+    fetch('https://karthikcreation.ap-1.evennode.com/api/admin/getService', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -27,7 +27,7 @@ function ProductSecurity() {
           setServices(data.data);
 
           data.data.forEach(service => {
-            fetch(`http://karthikcreation.ap-1.evennode.com/api/admin/viewServiceFile/${service.img}`, {
+            fetch(`https://karthikcreation.ap-1.evennode.com/api/admin/viewServiceFile/${service.img}`, {
               headers: {
                 'Authorization': `Bearer ${token}`
               }

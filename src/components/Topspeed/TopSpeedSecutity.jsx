@@ -12,7 +12,7 @@ function TopSpeedSecutity() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch('http://karthikcreation.ap-1.evennode.com/api/admin/getAllTopSpeedSecurityService', {
+        const response = await fetch('https://karthikcreation.ap-1.evennode.com/api/admin/getAllTopSpeedSecurityService', {
           headers: {
             Authorization: `Bearer ${token}`,
             'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ function TopSpeedSecutity() {
 
   const fetchImage = async (filename) => {
     try {
-      const response = await fetch(`http://karthikcreation.ap-1.evennode.com/api/admin/viewTopSpeedSecurityServiceFile/${filename}`, {
+      const response = await fetch(`https://karthikcreation.ap-1.evennode.com/api/admin/viewTopSpeedSecurityServiceFile/${filename}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

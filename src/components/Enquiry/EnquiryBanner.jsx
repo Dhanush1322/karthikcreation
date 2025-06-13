@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './EnquiryBanner.css';
 
 function EnquiryBanner() {
+  useEffect(() => {
+    // Preload the background image
+    const img = new Image();
+    img.src = '/enquiry/Frame 35.png';
+  }, []);
+
   return (
     <div className="enquiry-banner">
       <h1>Get in Touch</h1>

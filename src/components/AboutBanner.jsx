@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/AboutBanner.css';
 
 function AboutBanner() {
+
+  // Preload image on mount
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/img/about banner.png'; // or better: '/img/about-banner.png' if you rename
+  }, []);
+
   return (
     <div className="about-banner">
       <div className="about-banner-overlay">

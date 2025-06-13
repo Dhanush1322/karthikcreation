@@ -42,11 +42,11 @@ function EnquiryForm() {
   const fetchReferenceData = async (model) => {
     let url = '';
     if (model === 'artist') {
-      url = 'http://karthikcreation.ap-1.evennode.com/api/admin/getAllArtist';
+      url = 'https://karthikcreation.ap-1.evennode.com/api/admin/getAllArtist';
     } else if (model === 'service') {
-      url = 'http://karthikcreation.ap-1.evennode.com/api/admin/getService';
+      url = 'https://karthikcreation.ap-1.evennode.com/api/admin/getService';
     } else if (model === 'topspeedsecurityservice') {
-      url = 'http://karthikcreation.ap-1.evennode.com/api/admin/getAllTopSpeedSecurityService';
+      url = 'https://karthikcreation.ap-1.evennode.com/api/admin/getAllTopSpeedSecurityService';
     }
 
     try {

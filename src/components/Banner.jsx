@@ -8,34 +8,43 @@ function Banner() {
         {
             title: <>Creating Memorable<br /><span style={{ color: '#3B82F6' }}>Event</span> That Last a<br />Lifetime</>,
             subtitle: "From corporate gatherings to dream weddings, we deliver exceptional event management services tailored to your unique vision and requirement.",
-            backgroundImage: "./img/banner.jpg"
+            backgroundImage: "/img/banner.jpg"   // public folder path
         },
         {
             title: <>Creating Memorable<br /><span style={{ color: '#3B82F6' }}>Event</span> That Last a<br />Lifetime</>,
             subtitle: "From corporate gatherings to dream weddings, we deliver exceptional event management services tailored to your unique vision and requirement.",
-            backgroundImage: "./img/banner2.jpg"
+            backgroundImage: "/img/banner2.jpg"
         },
         {
             title: <>Creating Memorable<br /><span style={{ color: '#3B82F6' }}>Event</span> That Last a<br />Lifetime</>,
             subtitle: "From corporate gatherings to dream weddings, we deliver exceptional event management services tailored to your unique vision and requirement.",
-            backgroundImage: "./img/banner3.jpg"
+            backgroundImage: "/img/banner3.jpg"
         }
     ];
 
-    // Auto-slide logic
+    // Preload images
+    useEffect(() => {
+        slides.forEach(slide => {
+            const img = new Image();
+            img.src = slide.backgroundImage;
+        });
+    }, []);
+
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveSlide(prev => (prev % slides.length) + 1);
-        }, 5000); // Change slide every 5 seconds
+        }, 5000);
 
-        return () => clearInterval(interval); // Clean up interval on unmount
+        return () => clearInterval(interval);
     }, [slides.length]);
 
     return (
         <div
             className="banner-section"
             style={{
-                backgroundImage: `url(${slides[activeSlide - 1].backgroundImage})`
+                backgroundImage: `url(${slides[activeSlide - 1].backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
             }}
         >
             <div className="banner-content-box">

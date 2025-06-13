@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/Entertainment/EntertainmentBanner.css';
 import { Link } from 'react-router-dom';
+
 function EntertainmentBanner() {
+  useEffect(() => {
+    // Preload the background image
+    const img = new Image();
+    img.src = '/entertainment/ebanner.jpg';
+  }, []);
+
   return (
     <div className="entertainment-banner">
       {/* Dark overlay */}
@@ -22,10 +29,12 @@ function EntertainmentBanner() {
         </p>
 
         <div className="button-group">
-          <Link to='/Enqiry'> <button className="btn-primary">Enquiry</button></Link>
-       
-          <Link to='/ContactUs'> <button className="btn-secondary">Contact Us</button></Link>
-         
+          <Link to='/Enqiry'>
+            <button className="btn-primary">Enquiry</button>
+          </Link>
+          <Link to='/ContactUs'>
+            <button className="btn-secondary">Contact Us</button>
+          </Link>
         </div>
       </div>
     </div>

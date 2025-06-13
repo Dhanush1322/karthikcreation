@@ -61,7 +61,7 @@ function Aboutsection() {
         </div>
 
         <div className="about-image" data-aos="fade-left">
-          <img src="./img/about.png" alt="Team" />
+          <img src="/img/about.png" alt="Team" />
           <div className="quote-box">
             “We transform your vision into unforgettable experience”.
           </div>

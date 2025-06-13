@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/ProductBanner.css';
 import { Link } from 'react-router-dom';
+
 function ProductBannerSection() {
+  useEffect(() => {
+    // Preload background image
+    const img = new Image();
+    img.src = '/img/productbanner.jpg';
+  }, []);
+
   return (
     <div className="product-banner">
       {/* Background video - initially hidden, shown on hover */}
@@ -22,15 +29,10 @@ function ProductBannerSection() {
             experiences for any occasion.
           </p>
           <div className="product-banner-buttons">
-            <Link to='/ContactUs'><button className="contact-btn">Contact Us</button></Link>
-            
-            
+            <Link to='/ContactUs'>
+              <button className="contact-btn">Contact Us</button>
+            </Link>
           </div>
-          {/* <div className="product-banner-buttons">
-            <button className="contact-btn">Equipment Decoration</button>
-            <button className="services-btn">Artist Coordination</button>
-            <button className="services-btn">Security Solutions</button>
-          </div> */}
         </div>
       </div>
     </div>

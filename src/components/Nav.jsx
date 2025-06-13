@@ -29,16 +29,16 @@ function Nav() {
         <div className="bar"></div>
       </div>
 
-      {/* Links Section */}
       <div className={`links ${menuOpen ? 'active' : ''}`}>
-        <Link to="/" onClick={handleLinkClick}>Home</Link>
-        <Link to="/About" onClick={handleLinkClick}>About</Link>
-        <Link to="/Product" onClick={handleLinkClick}>Product</Link>
-        <Link to="/Entertainment" onClick={handleLinkClick}>Entertainment</Link>
-        <Link to="/TopSpeed" onClick={handleLinkClick}>Top Speed Security Service</Link>
-        <Link to="/Enqiry" onClick={handleLinkClick}>Client Enquiry Form</Link>
-        <Link to="/ContactUs" onClick={handleLinkClick}>Contact Us</Link>
+        <a href="/" onClick={handleLinkClick}>Home</a>
+        <a href="/About" onClick={handleLinkClick}>About</a>
+        <a href="/Product" onClick={handleLinkClick}>Product</a>
+        <a href="/Entertainment" onClick={handleLinkClick}>Entertainment</a>
+        <a href="/TopSpeed" onClick={handleLinkClick}>Top Speed Security Service</a>
+        <a href="/Enqiry" onClick={handleLinkClick}>Client Enquiry Form</a>
+        <a href="/ContactUs" onClick={handleLinkClick}>Contact Us</a>
       </div>
+
     </div>
   );
 }

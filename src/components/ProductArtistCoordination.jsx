@@ -68,13 +68,13 @@ const navigate = useNavigate();
               </span>
             </div>
             <div className="artist-info">
-              <h4>{artist.title}</h4>
+              <p>{artist.heading}</p>
               <div className="artist-rating">
                 <FaStar className="star-icon" />
                 <span>{artist.rating} ({artist.number_of_events} events)</span>
               </div>
             </div>
-            <button className="book-btn" onClick={()=> navigate('/Enqiry')}>Book Now</button>
+            <button className="book-btn" >  <a href="/Enqiry"> Book Now</a></button>
           </div>
         ))}
       </div>

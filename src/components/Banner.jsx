@@ -44,8 +44,8 @@ function Banner() {
             </div>
 
             <div className="banner-buttons">
-                <button className="explore-button">Services</button>
-                <button className="contact-button">Contact Us</button>
+                <button className="explore-button"><a href='/Product'>Services</a></button>
+                <button className="contact-button"><a href="/ContactUs">Contact Us</a></button>
             </div>
 
             <div className='line-section'>

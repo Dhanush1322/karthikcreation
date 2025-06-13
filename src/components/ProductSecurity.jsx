@@ -66,23 +66,22 @@ function ProductSecurity() {
                 )}
                 <span className="badge">{service.availability_status}</span>
               </div>
-              <div className="security-info">
-                <h4>{service.heading}</h4>
-                <ul>
-                  {service.subheading.map((feature, i) => (
-                    <li key={i}>
-                      <FaCheckCircle className="check-icon" /> {feature}
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  className="book-btn"
-                  onClick={() => navigate('/Enqiry')}
-                >
-                  Book Now
-                </button>
-              </div>
-            </div>
+ <div className="security-info">
+  <div className="security-info-content">
+    <h4>{service.heading}</h4>
+    <ul>
+      {service.subheading.map((feature, i) => (
+        <li key={i}>
+          <FaCheckCircle className="check-icon" /> {feature}
+        </li>
+      ))}
+    </ul>
+  </div>
+  <button className="book-btn">
+   <a href="/Enqiry"> Book Now</a>
+  </button>
+</div>
+</div>
         ))}
       </div>
     </div>

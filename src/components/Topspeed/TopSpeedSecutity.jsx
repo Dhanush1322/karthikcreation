@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './TopSpeedSecutity.css';
-
+import { Link } from 'react-router-dom';
 function TopSpeedSecutity() {
   const [services, setServices] = useState([]);
   const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODA5YzZlMzE4NGRkOGQwNWQxMjg5YjgiLCJlbWFpbCI6Im11aGFtbWFkc2hvYWliMjgwM0BnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJhdXRoVG9rZW4iOnRydWUsImlhdCI6MTc0ODQzNDA4MiwiZXhwIjoxODM0ODM0MDgyfQ.olVsB5_gf6j4qSv8TitQfkoAQj8Qh6RGWzQuTFHqP84'; // 🔐 Replace this with your actual token
@@ -96,7 +96,10 @@ function TopSpeedSecutity() {
               ))}
             </ul>
             <div className="card-footer">
-              <button className="book-btn">Book Now</button>
+         
+                  <button className="book-btn"><a href="/Enqiry">Book Now</a></button>
+              
+              
             </div>
           </div>
         ))}

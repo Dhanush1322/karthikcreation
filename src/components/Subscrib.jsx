@@ -20,13 +20,13 @@ function Subscrib() {
         Let's collaborate to bring your vision to life with our expertise in event management
       </p>
       <div className="subscribe-buttons" data-aos="zoom-in" data-aos-delay="300">
-       <Link to="/ContactUs">
-  <button className="btn-primary">Contact Us Today</button>
-</Link>
+   
+  <button className="btn-primary"><a href="/ContactUs">Contact Us Today</a></button>
 
-<Link to="/Product">
-  <button className="btn-outline">Explore Products</button>
-</Link>
+
+
+  <button className="btn-outline"><a href="/Product">Explore Products</a></button>
+
       </div>
     </div>
   );

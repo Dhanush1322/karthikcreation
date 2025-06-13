@@ -16,90 +16,104 @@
   }
   
   .security-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .security-card {
-    
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .security-image {
-    position: relative;
-  }
-  
-  .security-image img {
-    width: 100%;
-    height: 282px;
-    object-fit: cover;
-  }
-  
-  .badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #22c55e;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-  }
-  
-  .security-info {
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .security-info h4 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-  }
-  
-  .security-info ul {
-    padding-left: 0;
-    list-style: none;
-    margin-bottom: 15px;
-  }
-  
-  .security-info li {
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    font-size: 0.95rem;
-    color: #333;
-  }
-  
-  .check-icon {
-    color: #22c55e;
-    margin-right: 8px;
-  }
-  
-  .book-btn {
-    background: #9A9A9A;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-   
-    margin-left: 250px;
-  }
-  
-  .book-btn:hover {
-    background: #333;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.security-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure grid auto height alignment */
+}
+
+.security-image {
+  position: relative;
+}
+
+.security-image img {
+  width: 100%;
+  height: 282px;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #22c55e;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.security-info {
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.security-info-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: auto; /* Push button to bottom */
+}
+
+.security-info h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.security-info ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.security-info li {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.check-icon {
+  color: #22c55e;
+  margin-right: 4px;
+}
+
+.book-btn {
+  background: #9A9A9A;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: fit-content;
+  align-self: flex-start;
+  margin-top: auto; /* Ensure button stays at the bottom */
+}
+
+.book-btn:hover {
+  background: #333;
+}
+
   .View-all .view-all-btn{
     
     text-align: center;

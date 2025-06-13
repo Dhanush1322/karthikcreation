@@ -17,8 +17,8 @@ function ProductUnforgettableEvent() {
           From equipment and decorations to artists and security, we've got everything covered.
         </p>
         <div className="unforgettable-buttons">
-          <button className="btn-blue">Get Started</button>
-          <button className="btn-outline">Back to Home</button>
+          <button className="btn-blue"><a href="/Product">Get Started</a></button>
+          <button className="btn-outline"><a href="/">Back to Home</a></button>
         </div>
       </div>
       <div className="unforgettable-image" data-aos="fade-left">

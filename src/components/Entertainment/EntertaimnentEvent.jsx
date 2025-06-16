@@ -55,7 +55,7 @@ function EntertainmentEvent() {
             <div className="event-info">
               <h3>{event.title}</h3>
               <p>{event.subtitle}</p>
-              <a href="#" className="explore-link">Explore →</a>
+              {/* <a href="#" className="explore-link">Explore →</a> */}
             </div>
           </div>
         ))}

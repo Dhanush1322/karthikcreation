@@ -1,12 +1,11 @@
-/* EnquiryForm.css */
-
 .form-container {
   display: flex;
   justify-content: center;
-  padding: 40px;
-  background: white;
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #f7f9fc, #e0e7ff);
   position: relative;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 /* Decorative Images */
@@ -20,70 +19,87 @@
 
 .bg-img {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  opacity: 0.1;
 }
 
 .img1 {
-  top: 10px;
-  left: 380px;
+  top: 20px;
+  left: 50px;
 }
 
 .img2 {
-  top: 10px;
-  right: 100px;
+  top: 20px;
+  right: 50px;
 }
 
 .img3 {
-  top: 750px;
-  left: 950px;
+  bottom: 20px;
+  left: 100px;
 }
 
 .img4 {
-  bottom: 10px;
-  right: 1350px;
+  bottom: 20px;
+  right: 100px;
 }
 
 /* Form */
 .enquiry-form {
-  background: #EDEDED;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 600px;
-  font-family: 'Segoe UI', sans-serif;
-  margin-top: 85px;
-  z-index: 1000;
+  max-width: 650px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.enquiry-form:hover {
+  transform: translateY(-5px);
 }
 
 .enquiry-form h2 {
-  margin-bottom: 5px;
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
 }
 
 .enquiry-form p {
   margin-bottom: 20px;
   font-size: 14px;
-  color: #555;
+  color: #666;
 }
 
 .enquiry-form label {
   display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 6px;
   font-weight: 500;
+  color: #444;
 }
 
 .enquiry-form input,
 .enquiry-form select,
 .enquiry-form textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background-color: white;
-  border-radius: 5px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 8px;
   font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
 }
 
 .input-row {
@@ -94,7 +110,7 @@
 
 .input-row > div {
   flex: 1;
-  min-width: 100%;
+  min-width: 220px;
 }
 
 .enquiry-form textarea {
@@ -105,8 +121,8 @@
 .checkbox-row {
   display: flex;
   align-items: center;
-  margin-top: 15px;
-  font-size: 12px;
+  margin-top: 20px;
+  font-size: 13px;
   color: #555;
 }
 
@@ -116,30 +132,32 @@
 }
 
 .enquiry-form button {
-  margin-top: 20px;
+  margin-top: 25px;
   width: 100%;
-  background: #007bff;
+  background: linear-gradient(45deg, #4f46e5, #6366f1);
   color: white;
-  padding: 12px;
+  padding: 14px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .enquiry-form button:hover {
-  background: #0056cc;
+  background: linear-gradient(45deg, #4338ca, #4f46e5);
 }
 
 /* 📱 Mobile Styles */
 @media (max-width: 768px) {
   .form-container {
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   .input-row {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
   .image-wrapper {
@@ -147,12 +165,11 @@
   }
 
   .enquiry-form {
-    padding: 20px;
-    margin-top: 40px;
+    padding: 25px;
   }
 
   .enquiry-form h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .enquiry-form p {

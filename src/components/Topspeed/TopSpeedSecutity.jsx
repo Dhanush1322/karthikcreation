@@ -35,7 +35,7 @@ function TopSpeedSecutity() {
 
   const fetchImage = async (filename) => {
     try {
-      const response = await fetch(`https://karthikcreation.ap-1.evennode.com/api/admin/viewTopSpeedSecurityServiceFile/${filename}`, {
+      const response = await fetch(`https://karthikcreation.ap-1.evennode.com/api/admin/viewTopSpeedSecurityServiceFile?fileUrl=${filename}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -72,7 +72,7 @@ function TopSpeedSecutity() {
       <h2 className="main-heading" data-aos="fade-right">TOP SPEED SECURITY SERVICES</h2>
       <p className="tp-description" data-aos="fade-left">
         <u>
-          Services provided: all of Event’s & Expo’s industry & Corporates, Places-Public and Private,
+          Services provide for all of Event’s & Expo’s industry & Corporates, Public and Private Places,
           Institutional, Commercial, Residential, Schools, Hospitals, Larger mixed Communities,
           Institutions, Apartments, Houses, etc.
         </u>

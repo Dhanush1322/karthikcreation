@@ -23,7 +23,7 @@ const services = [
     animation: 'fade-right'
   },
   {
-    title: 'Equipment Rent',
+    title: 'Equipment Rentals',
     image: '/img/c7.jpg',
     description: 'We provide equipment rental, setup, and  management for exhibitions, trade shows, and displays with innovative, impactful concepts.',
     animation: 'fade-up'

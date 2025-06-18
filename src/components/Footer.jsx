@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <img src="./img/p.png" alt="Karthik Logo" className="footer-logo" />
+          <img src="./img/p.png" alt="Karthik Logo" className="footer-logo" style={{width:'200px'}}/>
           <p>
             Creating extraordinary event experiences with meticulous planning, premium
             equipment, and flawless execution since 2010.

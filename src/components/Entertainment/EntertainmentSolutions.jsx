@@ -15,12 +15,12 @@ const entertainmentItems = [
     image: "./entertainment/ee1.png",
   },
   {
-    title: "Antique Two Or Display",
+    title: "Antique Two Wheelers",
     description: "Showcase vintage scooters and motorcycles – the older and shinier, the better!",
     image: "./entertainment/ee3.png",
   },
   {
-    title: "Artificially Created outdoor flowing water fountains",
+    title: "Artificially  water fountains",
     description: "Setup for events & Weddings",
     image: "./entertainment/ee3.png",
   },
@@ -31,7 +31,7 @@ const entertainmentItems = [
   },
   {
     title: "Representing Kannada State",
-    description: "Professional performers for cultural and political and many more etc..",
+    description: "Professional performers for cultural and political events",
     image: "./entertainment/dan.jpg",
   },
 ];

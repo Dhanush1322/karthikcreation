@@ -6,7 +6,7 @@ import { FaCalendarAlt } from 'react-icons/fa';
 
 const eventsData = [
   {
-    title: "Marathon and meditation",
+    title: "Marathon Fitness",
     image: "./entertainment/p.png",
     items: [
       {

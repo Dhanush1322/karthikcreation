@@ -76,7 +76,7 @@ function EventGallery() {
   const fetchImageBlob = async (filename) => {
     try {
       const res = await axios.get(
-        `https://karthikcreation.ap-1.evennode.com/api/admin/viewEventGalleryFile/${filename}`,
+        `https://karthikcreation.ap-1.evennode.com/api/admin/viewEventGalleryFile?fileUrl=${filename}`,
         {
           headers: { Authorization: `Bearer ${token}` },
           responseType: 'blob',

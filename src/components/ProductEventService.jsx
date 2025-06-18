@@ -20,7 +20,7 @@ const eventData = [
     image: '/Product/p4.jpg',
   },
   {
-    title: 'Equipment & Decorations',
+    title: 'Corporate Conference Equipments',
     description: 'Premium equipment rentals including sound systems, lighting, stages, furniture, and themed decorations for any event.',
     image: '/Product/p3.jpg',
   },

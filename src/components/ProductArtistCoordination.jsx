@@ -28,7 +28,7 @@ const navigate = useNavigate();
 
           // Fetch image for each artist
           data.data.forEach(artist => {
-            fetch(`https://karthikcreation.ap-1.evennode.com/api/admin/viewArtistFile/${artist.img}`, {
+            fetch(`https://karthikcreation.ap-1.evennode.com/api/admin/viewArtistFile?fileUrl=${artist.img}`, {
               headers: {
                 'Authorization': `Bearer ${token}`
               }

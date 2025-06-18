@@ -19,7 +19,8 @@ function LatestNews() {
       image: '/img/dddd2.png',
       description: 'We are Auk-lauded and recognized of Our excellence to commitment of outstanding performances and achievements which are shaped by the strength of the foundations set by Us.',
       list: [],
-      style: 'highlight-blue'
+      style: 'highlight-blue',
+      pdf : '/pdf/Setting the bar for Passion & success1.pdf'
     },
     {
       title: 'Outstanding Achievement Awards',
@@ -30,7 +31,8 @@ function LatestNews() {
         'Awarded for outstanding performance and unwavering commitment to success.',
         'For consistently exceeding expectations and achieving remarkable results.',
       ],
-      style: ''
+      style: '',
+      pdf : '/pdf/New Awarded for outstanding performance and unwavering commitment to success.2.pdf (7).pdf'
     },
     {
       title: 'Excellence in Service Award',
@@ -41,7 +43,8 @@ function LatestNews() {
         'Awarded for exemplary service and commitment to excellence',
         'For providing outstanding service and making a significant impact',
       ],
-      style: 'highlight-green'
+      style: 'highlight-green',
+      pdf : '/pdf/New Awarded for outstanding performance and unwavering commitment to success.2.pdf (6).pdf'
     },
     {
       title: 'Leadership and Innovation Award',
@@ -52,7 +55,8 @@ function LatestNews() {
         'Awarded for pioneering innovative solutions and leading by example.',
         'For demonstrating outstanding leadership and fostering innovation.',
       ],
-      style: 'highlight-green'
+      style: 'highlight-green',
+      pdf : '/pdf/New Awarded for outstanding performance and unwavering commitment to success.2.pdf (5).pdf'
     },
     {
       title: 'Rising Star Award',
@@ -63,7 +67,8 @@ function LatestNews() {
         'Awarded for your remarkable progress and promising future.',
         'For demonstrating outstanding growth and shining as a rising star.',
       ],
-      style: 'highlight-green'
+      style: 'highlight-green',
+      pdf : '/pdf/New Awarded for outstanding performance and unwavering commitment to success.2.pdf (8).pdf'
     },
   ];
 
@@ -91,7 +96,7 @@ function LatestNews() {
               </ul>
             )}
            &nbsp;  &nbsp; &nbsp;<a
-              href="/pdfs/sample.pdf"
+              href={news.pdf}
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: '#3E87FD', marginTop: '10px', display: 'inline-block' }}

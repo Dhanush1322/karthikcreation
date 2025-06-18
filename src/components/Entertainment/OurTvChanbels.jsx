@@ -4,11 +4,11 @@ import 'aos/dist/aos.css';
 import './OurTvChannels.css';
 
 const tvChannels = [
-  { name: 'Colours TV', image: '/entertainment/t4.png' },
-  { name: 'TV 9', image: '/entertainment/t3.png' },
-  { name: 'Public TV', image: '/entertainment/t5.png' },
-  { name: 'Swarna TV', image: '/entertainment/t2.jpg' },
-  { name: 'Zee 5', image: '/entertainment/t1.png' },
+  { name: 'Kannada Colours TV', image: '/entertainment/t4.png' },
+  { name: 'Kannada TV 9', image: '/entertainment/t3.png' },
+  { name: 'Kannada Public TV', image: '/entertainment/t5.png' },
+  { name: 'Kannada Swarna TV', image: '/entertainment/t2.jpg' },
+  { name: 'Kannada Zee 5', image: '/entertainment/t1.png' },
 ];
 
 function OurTvChannels() {
@@ -22,7 +22,7 @@ function OurTvChannels() {
 
   return (
     <div className="tv-section">
-      <h2>Our TV Channel</h2>
+      <h2>Our Association  Media And TV Channels</h2>
       <div className="tv-grid">
         {tvChannels.map((channel, index) => (
           <div

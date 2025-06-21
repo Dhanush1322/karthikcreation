@@ -2,12 +2,13 @@ import React from 'react';
 import '../styles/Footer.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <img src="./img/p.png" alt="Karthik Logo" className="footer-logo" style={{width:'200px'}}/>
+          <img src="./img/logo.jpeg" alt="Karthik Logo" className="footer-logo" style={{width:'200px', borderRadius:'20px;'}}/>
           <p>
             Creating extraordinary event experiences with meticulous planning, premium
             equipment, and flawless execution since 2010.

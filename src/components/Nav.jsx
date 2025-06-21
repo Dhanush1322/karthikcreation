@@ -30,7 +30,7 @@ function Nav() {
       </div>
 
       <div className={`links ${menuOpen ? 'active' : ''}`}>
-        <a href="/" onClick={handleLinkClick}>Home</a>
+        <a href="/home" onClick={handleLinkClick}>Home</a>
         <a href="/About" onClick={handleLinkClick}>About</a>
         <a href="/Product" onClick={handleLinkClick}>Product</a>
         <a href="/Entertainment" onClick={handleLinkClick}>Entertainment</a>

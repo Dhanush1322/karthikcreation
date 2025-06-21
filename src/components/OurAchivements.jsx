@@ -18,7 +18,7 @@ const achievements = [
     image: '/img/hch1.png',
     tag: '🎧 Professional-grade Equipment',
     highlightClass: '',
-    file: '/pdfs/event-management.jpeg', // unique file
+    file: '/pdf/expo.pdf', // unique file
   },
   {
     title: 'Our Sucessful Services catered by Us',
@@ -26,7 +26,7 @@ const achievements = [
     image: '/img/hch2.png',
     tag: '✅ TechCorp International',
     highlightClass: 'highlight-green',
-    file: '/pdfs/success-story.pdf', // unique file
+    file: '/pdf/succes.pdf', // unique file
   },
 ];
 

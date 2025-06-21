@@ -7,7 +7,7 @@ const eventData = [
   {
     title: 'Government & Political Events',
     description: 'Specialized in organizing political functions, rallies, and roadshows with logistics management.',
-    image: '/Product/p6.jpg',
+    image: '/img/1.jpeg',
   },
   {
     title: 'B2B & B2C Exhibitions',
@@ -27,7 +27,7 @@ const eventData = [
   {
     title: 'Artist Coordination',
     description: 'Access to our extensive network of performers, musicians, DJs, and entertainers with professional coordination services.',
-    image: '/Product/p2.jpg',
+    image: '/img/2.jpeg',
   },
   {
     title: 'Security Solutions',
@@ -59,7 +59,7 @@ function ProductEventService() {
             <div className="compro-event-content">
               <h3>{event.title}</h3>
               <p>{event.description}</p>
-              <a href="#">Learn more →</a>
+              {/* <a href="#">Learn more →</a> */}
             </div>
           </div>
         ))}

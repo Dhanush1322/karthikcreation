@@ -7,7 +7,7 @@ function AboutBanner() {
   // Preload image on mount
   useEffect(() => {
     const img = new Image();
-    img.src = '/img/about banner.png'; // or better: '/img/about-banner.png' if you rename
+    img.src = '/img/cvs.png'; // or better: '/img/about-banner.png' if you rename
   }, []);
 
   return (

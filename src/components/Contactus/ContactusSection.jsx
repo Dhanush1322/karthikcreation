@@ -70,11 +70,11 @@ function ContactusSection() {
         <div className="contact-details">
           <div className="contact-item">
             <div className="icon-circle"><Phone size={18} /></div>
-            <span>+91 73530 00044 / 98455 85425</span>
+            <span>+91 73530 00044 / +91 98455 85425/ +91 95380 05736</span>
           </div>
           <div className="contact-item">
             <div className="icon-circle"><Mail size={18} /></div>
-            <span>karthikcreations.2011@gmail.com / topspeedsec@2017@gmail.com</span>
+            <span>marketing@karthikcreations.org / marketing@topspeedsec.org</span>
           </div>
           <div className="contact-item">
             <div className="icon-circle"><MapPin size={18} /></div>

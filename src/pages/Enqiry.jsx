@@ -4,9 +4,8 @@ import EnquiryBanner from '../components/Enquiry/EnquiryBanner'
 function Enqiry() {
     return (
         <div>
-         
-           <EnquiryBanner />
-             <EnqiryForm />
+            <EnquiryBanner />
+            <EnqiryForm />
     
         </div>
     )

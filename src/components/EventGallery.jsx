@@ -40,6 +40,15 @@ function EventGallery() {
         <p>Loading gallery...</p>
       ) : (
         <div className="event-grid">
+          <div class="event-gallery-card">
+
+            <img src="path/to/image.jpg" alt="Event Image" class="event-media" />
+
+            <h3>Event Title</h3>
+            <p>This is a short description of the event or service being displayed.</p>
+            <a href="/ball1.mp4" target='_black' ><p style={{ color: "red" }}>Watch Video </p></a>
+          </div>
+
           {filteredEvents.map((event, idx) => (
             <div
               key={idx}

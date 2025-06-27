@@ -14,16 +14,17 @@ const milestones = [
     title: 'First Major Project',
     description: 'Completed our first major commercial project, establishing our reputation for quality and attention to detail.',
   },
-  {
-    year: '2005',
-    title: 'Expansion',
-    description: 'Expanded our services to include comprehensive design solutions and launched our sister concern firm – "Top Speed".',
-  },
-  {
+   {
     year: '2010',
     title: 'Industry Recognition',
     description: 'Received our first industry award for excellence in design and customer satisfaction, marking our position as an industry leader.',
   },
+  {
+    year: '2011',
+    title: 'Expansion',
+    description: 'Expanded our services to include comprehensive design solutions and launched our sister concern firm – "Top Speed".',
+  },
+ 
   {
     year: 'Present',
     title: 'Industry Leader',

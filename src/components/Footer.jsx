@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Footer.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -13,12 +14,20 @@ function Footer() {
             Creating extraordinary event experiences with meticulous planning, premium
             equipment, and flawless execution since 2010.
           </p>
-          <div className="footer-social">
-            <FaFacebookF />
-            <FaInstagram />
-            <FaLinkedinIn />
-            <FaTwitter />
-          </div>
+        <div className="footer-social">
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <FaFacebookF />
+  </a>
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <FaInstagram />
+  </a>
+  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+    <FaLinkedinIn />
+  </a>
+  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+    <FaXTwitter />
+  </a>
+</div>
         </div>
 
         <div className="footer-column">
@@ -63,9 +72,8 @@ function Footer() {
             Balgasangadhar Nagar, Mallathahalli,<br />
             Bangalore-560056.
           </p>
-          <p>+91 73530 00044 / 98455 85425</p>
-          <p>karthikcreations.2011@gmail.com/
-           topspeedsec@2017@gmail.com</p>
+          <p>+91 73530 00044 / +91 98455 85425 <br />+91 95380 05736</p>
+          <p>marketing@karthikcreations.org / marketing@topspeedsec.org</p>
           <p>Mon - Sun : 9AM - 6PM</p>
         </div>
       </div>

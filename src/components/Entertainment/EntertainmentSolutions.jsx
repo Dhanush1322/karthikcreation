@@ -17,7 +17,7 @@ const entertainmentItems = [
   {
     title: "Antique Two Wheelers",
     description: "Showcase vintage scooters and motorcycles – the older and shinier, the better!",
-    image: "./entertainment/ee3.png",
+    image: "./img/2wheeler.jpeg",
   },
   {
     title: "Artificially  water fountains",

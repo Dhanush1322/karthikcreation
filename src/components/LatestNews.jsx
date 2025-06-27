@@ -166,7 +166,7 @@ function LatestNews() {
     },
     {
       title: 'Outstanding Achievement Awards',
-      image: '/img/dddd.png',
+      image: '/img/dddd3.png',
       description: 'The brilliant glow of Our achievement lights the way to Our success',
       list: [
         'In recognition of your exceptional contributions and dedication to excellence.',
@@ -190,7 +190,7 @@ function LatestNews() {
     },
     {
       title: 'Leadership and Innovation Award',
-      image: '/img/dddd3.png',
+      image: '/img/dddd.png',
       description: 'Our leadership is building our future with creativity and vision, with setting the pace.',
       list: [
         'In recognition of your exceptional leadership and innovative contributions.',

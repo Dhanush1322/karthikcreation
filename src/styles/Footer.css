@@ -42,12 +42,21 @@
   }
   
   .footer-social {
-    margin-top: 10px;
-    display: flex;
-    gap: 15px;
-    font-size: 18px;
-  }
-  
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #fff; /* or black based on your footer theme */
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #0072a0;
+  transform: scale(1.2);
+}
+
   .footer-bottom {
     border-top: 1px solid #333;
     text-align: center;

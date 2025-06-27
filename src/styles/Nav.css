@@ -71,11 +71,8 @@
 }
 
 .social-icons a:hover {
-   color: maroon;
-  
-  transform: scale(1.2);
- 
-
+  color: maroon;
+  transform: scale(1.9); /* more noticeable scale */
 }
 
 /* Responsive styles */

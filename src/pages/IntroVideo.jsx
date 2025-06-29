@@ -40,7 +40,7 @@ const IntroVideo = () => {
     <div style={{ width: '100%', height: '100vh', overflow: 'hidden' }}>
       <video
         ref={videoRef}
-        src="/loader/loader.mp4"  // ✔ your video path
+        src="/logo karthikk (2).mp4"  // ✔ your video path
         autoPlay
         muted
         playsInline

@@ -42,11 +42,11 @@ function EventGallery() {
         <div className="event-grid">
           <div class="event-gallery-card">
 
-            <img src="path/to/image.jpg" alt="Event Image" class="event-media" />
+            <img src="/img/logooo.jpeg" alt="Event Image" class="event-media" style={{style:"height:300px;"}}/>
 
-            <h3>Event Title</h3>
-            <p>This is a short description of the event or service being displayed.</p>
-            <a href="/ball1.mp4" target='_black' ><p style={{ color: "red" }}>Watch Video </p></a>
+            <h3>About Us</h3>
+            <p>About Karthik Creations & Top Speed Detective & Security Services</p>
+            <a href="/eventgallery.mp4" target='_black' ><p style={{ color: "red" }}>Watch Video </p></a>
           </div>
 
           {filteredEvents.map((event, idx) => (

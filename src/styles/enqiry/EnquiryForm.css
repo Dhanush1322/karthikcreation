@@ -1,13 +1,24 @@
 .form-container {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 60px 30px;
-  background: linear-gradient(135deg, #f7f9fc, #e0e7ff);
-  position: relative;
   flex-wrap: wrap;
   min-height: 100vh;
-  background-image: url('/img/eqbanner.jpeg');
-  background-size: cover;
+  z-index: 1;
+ 
+}
+
+
+
+.form-container video.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 /* Decorative Images */

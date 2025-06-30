@@ -174,8 +174,8 @@ function LatestNews() {
         'For consistently exceeding expectations and achieving remarkable results.',
       ],
       style: '',
-      pdf: '/pdf/New Awarded for outstanding performance and unwavering commitment to success.2.pdf (7).pdf'
-    },
+     pdf: '/pdf/New Awarded for outstanding performance and unwavering commitment to success.2.pdf (5).pdf'
+     },
     {
       title: 'Excellence in Service Award',
       image: '/img/dddd4.png',
@@ -198,7 +198,8 @@ function LatestNews() {
         'For demonstrating outstanding leadership and fostering innovation.',
       ],
       style: 'highlight-green',
-      pdf: '/pdf/New Awarded for outstanding performance and unwavering commitment to success.2.pdf (5).pdf'
+         pdf: '/pdf/New Awarded for outstanding performance and unwavering commitment to success.2.pdf (7).pdf'
+   
     },
     {
       title: 'Rising Star Award',

@@ -17,8 +17,11 @@
   max-width: 500px;
   transition: 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+
 .custom-button:hover {
-  opacity: 0.9;
+  opacity: 0.67;
+  transform: scale(1.05);
 }

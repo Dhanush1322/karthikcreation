@@ -12,7 +12,7 @@ function Footer() {
           <img src="./img/logo.jpeg" alt="Karthik Logo" className="footer-logo" style={{width:'200px', borderRadius:'20px;'}}/>
           <p>
             Creating extraordinary event experiences with meticulous planning, premium
-            equipment, and flawless execution since 2010.
+            equipment, and flawless execution since 2005.
           </p>
         <div className="footer-social">
   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
